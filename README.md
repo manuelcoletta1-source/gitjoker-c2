@@ -1,71 +1,100 @@
-# GitJoker-C2
+# GITJOKER-C2
 
-**GitJoker-C2** è un **nodo pubblico di controllo e coordinamento in modalità C2**.  
-Questo repository funge da punto di esposizione, verifica e documentazione tecnica del nodo **C2**.
+**GITJOKER-C2** è un **nodo tecnico di Command & Control (C2)** per il coordinamento,
+la verifica e l’orchestrazione dei nodi pubblici e delle infrastrutture
+afferenti all’ecosistema **Hermeticum B.C.E.**.
+
+Questo repository **non è editoriale**, non produce contenuti disciplinari
+e non interpreta le opere collegate.  
+Svolge esclusivamente **funzione tecnica di coordinamento e collegamento**.
 
 ---
 
 ## Stato del nodo
 
+- **Tipo:** Nodo C2 (Command & Control)
+- **Dominio:** Tecnico / Coordinamento
+- **Stato:** ACTIVE
 - **Repository:** Pubblico
 - **GitHub Pages:** Attivo
-- **Nodo:** Operativo
-- **Modalità:** C2
-- **Stato generale:** ACTIVE
 
 URL pubblico:
 https://manuelcoletta1-source.github.io/gitjoker-c2/
 
 ---
 
-## IPR-5 — GitJoker-C2
+## Funzione
 
-- **IPR-ID:** IPR-5-GITJOKER-C2
-- **Stato:** ACTIVE
-- **Timestamp canonico:** 05/02/1988 15:30 (Bologna, IT)
-- **CID (IPFS / Filecoin):**  
-  bafkreidhv73vqrxoweog33ls3rnwrgyicio234pcuks6mnep76yh56pj5q
-- **Bitcoin TXID:**  
-  9eeb29b67f4a649d563b95560fda5ddaa84777b13515f936837fc93d28554b45
-- **Ethereum TX:**  
-  0xf65eb314a1edd392fc15fcd9c65d22060ca39cbac04fcfcb48b978062500a7eff
-- **URL di verifica pubblica:**  
-  https://manuelcoletta1-source.github.io/gitjoker-c2/
+GITJOKER-C2 svolge le seguenti funzioni:
+
+- nodo di coordinamento tecnico C2  
+- superficie di collegamento tra nodi pubblici (`index.html`)  
+- supporto alla verifica pubblica delle infrastrutture  
+- orchestrazione logica dei moduli e dei servizi  
+
+Non svolge funzioni editoriali, normative o interpretative.
 
 ---
 
-## Funzione del repository
+## Relazione con Hermeticum B.C.E.
 
-GitJoker-C2 svolge esclusivamente funzioni **C2**:
+GITJOKER-C2 è un **nodo operativo** all’interno
+dell’ecosistema **Hermeticum B.C.E.** e opera come:
 
-- Nodo di controllo e coordinamento
-- Punto di verifica pubblica IPR
-- Centro documentale tecnico
-- Base di esposizione operativa del nodo
-
-Non è un repository dimostrativo né concettuale.  
-È un **nodo operativo reale**.
+- punto di regia tecnica  
+- strato di controllo e supervisione  
+- hub di collegamento tra infrastrutture, registri e opere  
 
 ---
 
-## Struttura
+## Index Hub — Nodi collegati
+
+Questo nodo collega esclusivamente entità già esposte pubblicamente.
+
+- **Hermeticum B.C.E. — Services**  
+  https://manuelcoletta1-source.github.io/hermeticum-bce-services/
+
+- **EU IPR Registry**  
+  https://manuelcoletta1-source.github.io/ue-ipr-registry/
+
+- **ESOTEROLOGIA — Edizioni (IPR-5)**  
+  https://manuelcoletta1-source.github.io/esoterologia-edizioni-ipr5/
+
+- **CORPUS ESOTEROLOGIA ERMETICA**  
+  https://manuelcoletta1-source.github.io/corpus-esoterologia-ermetica/
+
+- **APOCALIPSIS**  
+  https://manuelcoletta1-source.github.io/apocalipsis/
+
+- **IL PORTALE DELL’ANTICRISTO**  
+  https://manuelcoletta1-source.github.io/IL-PORTALE-DELL--ANTICRISTO/
+
+---
+
+## Regime operativo
+
+- ogni nodo mantiene il proprio regime di validità e decadenza  
+- GITJOKER-C2 non fonda, non estende, non stabilizza  
+- la funzione è esclusivamente: **coordinare, collegare, verificare**
+
+---
+
+## Licenza e stato
+
+Repository tecnico-documentale.  
+Distribuzione e riuso soggetti a **licenza Hermeticum B.C.E.**  
+Tutti i diritti riservati.
+
 ---
 
 ## Autore e controllo
 
-- **Autore / Fondatore:** Manuel Coletta
-- **Nodo:** GitJoker-C2
-- **Modalità:** C2
-- **Stato:** Operativo e tracciato
+**Hermeticum B.C.E. S.r.l.**  
+Fondatore e autore: **Manuel Coletta**
+
+Questo repository è parte integrante
+dell’infrastruttura **Hermeticum B.C.E.**.
 
 ---
 
-## Nota
-
-Questo repository è progettato per essere:
-- auto-contenuto
-- opponibile
-- verificabile pubblicamente
-- indipendente da repository rimossi
-
-Ogni modifica rilevante è versionata tramite commit pubblico.
+**Fine del documento.**
