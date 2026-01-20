@@ -1,76 +1,49 @@
----
+# GITJOKER-C2
+**IPR-4 — Command & Control per Publishing su GitHub**
 
-GITJOKER-C2 è un modulo **C2 (Command & Control)** per la pubblicazione, la tracciabilità e la validazione pubblica di progetti su GitHub: repository, GitHub Pages, versioning e audit trail.
-
-> Modello operativo: **AI-assisted / Human-executed** (UE-compliant)
-
----
-
-## Identità
-GITJOKER-C2 trasforma contenuti e prove (README, documenti, hash, CID, anchor, roadmap) in una **vetrina pubblica verificabile** e in una **catena di versioni** leggibile e difendibile.
+GITJOKER-C2 è un modulo C2 (Command & Control) per la pubblicazione, la tracciabilità e l’organizzazione di progetti su GitHub.  
+Trasforma repository e documentazione in asset pubblici ordinati, versionati e verificabili.
 
 ---
 
-## Funzioni Core
-- **Standardizzazione repository** (struttura, naming, baseline documentale)
-- **Publishing verificabile** (GitHub Pages)
-- **Tracciabilità temporale** (commit, release, changelog)
-- **Supporto IPR** (registri e riferimenti a hash/CID/anchor)
+## Scopo
+- Rendere un progetto **leggibile** dall’esterno
+- Garantire **tracciabilità temporale** (commit, release, changelog)
+- Fornire una **vetrina pubblica stabile** tramite GitHub Pages
 
 ---
 
-## Deliverable Operativi
-- Repository strutturato (root canonica)
-- README (vetrina + specifica)
-- CHANGELOG (registro versioni)
-- TERMS (perimetro d’uso e disclaimer)
-- Documentazione (`docs/`)
-- Registri (`registry/`)
+## Funzionalità
+- Standardizzazione della struttura del repository
+- Publishing pubblico (GitHub Pages)
+- Versioning e changelog
+- Supporto a registri e riferimenti esterni (hash, CID, anchor)
 
 ---
 
-## Architettura Logica
+## Struttura del repository
 
-gitjoker-c2 │ ├─ README.md ├─ CHANGELOG.md ├─ TERMS.md ├─ LICENSE ├─ docs/ │  └─ overview.md └─ registry/ └─ README.md
+gitjoke-c2 |-README.md|-CHANGELOG.md|-TERMS.md|-docs/'-regostry/
 
----
-
-## Inquadramento IPR
-- **Classe:** IPR-4
-- **Nome modulo:** GITJOKER-C2
-- **Dominio:** GitHub / Web pubblico
-- **Stato:** ACTIVE
+## Inquadramento
+- **Classe IPR:** IPR-4  
+- **Modulo:** GITJOKER-C2  
+- **Dominio:** GitHub / Web pubblico  
+- **Stato:** ACTIVE  
 
 ---
 
-## Differenza chiave
-GitHub lo sanno usare in tanti.  
-GITJOKER-C2 fa la parte che manca: **ordine, narrazione verificabile, prova e versionamento**.
+## Governance
+- `README.md` → messaggio pubblico e descrizione del prodotto  
+- `CHANGELOG.md` → storico delle modifiche  
+- `docs/` → documentazione di supporto  
+- `registry/` → registri e riferimenti verificabili  
 
-> Se non è leggibile, non è verificabile.  
-> Se non è versionato, non esiste.
-
----
-
-## Repository Governance (GITJOKER-C2)
-
-Questo repository segue una separazione chiara tra:
-- **Vetrina pubblica** → `README.md`
-- **Storia operativa** → `CHANGELOG.md`
-- **Documentazione** → `docs/`
-- **Registri e prove** → `registry/`
-
-### Regole
-- Il **README** si aggiorna **solo** quando cambia il messaggio pubblico o il posizionamento.
-- Le modifiche incrementali vanno nel **CHANGELOG**.
-- Le prove e i riferimenti esterni vanno in **registry/**.
-- Ogni commit è responsabilità dell’operatore umano che lo esegue.
-
-Questa governance garantisce **leggibilità, tracciabilità e verificabilità** nel tempo.
+Il README viene aggiornato solo quando cambia il messaggio pubblico.  
+Le modifiche operative vanno nel changelog.
 
 ---
 
-## Firma di Sistema
+## Firma
 **GITJOKER-C2**  
 by **HERMETICUM B.C.E. S.r.l.**
-
