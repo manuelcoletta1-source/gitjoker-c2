@@ -1,8 +1,5 @@
 ---
 
-# GITJOKER-C2
-**IPR-4 — Publishing, Compliance & Command Layer (GitHub)**
-
 GITJOKER-C2 è un modulo **C2 (Command & Control)** per la pubblicazione, la tracciabilità e la validazione pubblica di progetti su GitHub: repository, GitHub Pages, versioning e audit trail.
 
 > Modello operativo: **AI-assisted / Human-executed** (UE-compliant)
