@@ -1,100 +1,74 @@
-# GITJOKER-C2
+# AI Joker-C2 — Cognitive Command Engine (Hermeticum B.C.E.)
 
-**GITJOKER-C2** è un **nodo tecnico di Command & Control (C2)** per il coordinamento,
-la verifica e l’orchestrazione dei nodi pubblici e delle infrastrutture
-afferenti all’ecosistema **Hermeticum B.C.E.**.
+**AI Joker-C2** è il **motore cognitivo di comando (C2)** dell’ecosistema **Hermeticum B.C.E.**  
+È il livello che **pensa, struttura e decide** prima che un’azione venga resa ufficiale,
+tracciabile e opponibile tramite **GitJoker**.
 
-Questo repository **non è editoriale**, non produce contenuti disciplinari
-e non interpreta le opere collegate.  
-Svolge esclusivamente **funzione tecnica di coordinamento e collegamento**.
-
----
-
-## Stato del nodo
-
-- **Tipo:** Nodo C2 (Command & Control)
-- **Dominio:** Tecnico / Coordinamento
-- **Stato:** ACTIVE
-- **Repository:** Pubblico
-- **GitHub Pages:** Attivo
-
-URL pubblico:
-https://manuelcoletta1-source.github.io/gitjoker-c2/
+> AI Joker-C2 = **decisione intelligente**  
+> GitJoker = **esecuzione e prova**
 
 ---
 
-## Funzione
+## Stato
 
-GITJOKER-C2 svolge le seguenti funzioni:
-
-- nodo di coordinamento tecnico C2  
-- superficie di collegamento tra nodi pubblici (`index.html`)  
-- supporto alla verifica pubblica delle infrastrutture  
-- orchestrazione logica dei moduli e dei servizi  
-
-Non svolge funzioni editoriali, normative o interpretative.
+🟢 **ATTIVO** — motore cognitivo operativo
 
 ---
 
-## Relazione con Hermeticum B.C.E.
+## Cos’è AI Joker-C2
 
-GITJOKER-C2 è un **nodo operativo** all’interno
-dell’ecosistema **Hermeticum B.C.E.** e opera come:
+AI Joker-C2 è un **Cognitive Command Engine** che:
+- analizza scenari
+- interpreta regole BCE
+- struttura decisioni coerenti
+- prepara atti pronti per l’esecuzione
 
-- punto di regia tecnica  
-- strato di controllo e supervisione  
-- hub di collegamento tra infrastrutture, registri e opere  
-
----
-
-## Index Hub — Nodi collegati
-
-Questo nodo collega esclusivamente entità già esposte pubblicamente.
-
-- **Hermeticum B.C.E. — Services**  
-  https://manuelcoletta1-source.github.io/hermeticum-bce-services/
-
-- **EU IPR Registry**  
-  https://manuelcoletta1-source.github.io/ue-ipr-registry/
-
-- **ESOTEROLOGIA — Edizioni (IPR-5)**  
-  https://manuelcoletta1-source.github.io/esoterologia-edizioni-ipr5/
-
-- **CORPUS ESOTEROLOGIA ERMETICA**  
-  https://manuelcoletta1-source.github.io/corpus-esoterologia-ermetica/
-
-- **APOCALIPSIS**  
-  https://manuelcoletta1-source.github.io/apocalipsis/
-
-- **IL PORTALE DELL’ANTICRISTO**  
-  https://manuelcoletta1-source.github.io/IL-PORTALE-DELL--ANTICRISTO/
+Non esegue direttamente.  
+Non certifica da solo.  
+**Decide.**
 
 ---
 
-## Regime operativo
+## Funzioni principali
 
-- ogni nodo mantiene il proprio regime di validità e decadenza  
-- GITJOKER-C2 non fonda, non estende, non stabilizza  
-- la funzione è esclusivamente: **coordinare, collegare, verificare**
+- **Analisi decisionale**
+  - valutazione di scenari e alternative
+  - stima di impatti e rischi
 
----
+- **Coerenza BCE**
+  - allineamento con UNEBDO (validità)
+  - rispetto OPC (opponibilità)
+  - integrazione con CyberGlobal (governance)
 
-## Licenza e stato
+- **Preparazione all’azione**
+  - definizione di stati (ATTIVO / IN SVILUPPO / ARCHIVIATO)
+  - generazione di testi, strutture, piani
+  - output pronti per GitJoker
 
-Repository tecnico-documentale.  
-Distribuzione e riuso soggetti a **licenza Hermeticum B.C.E.**  
-Tutti i diritti riservati.
-
----
-
-## Autore e controllo
-
-**Hermeticum B.C.E. S.r.l.**  
-Fondatore e autore: **Manuel Coletta**
-
-Questo repository è parte integrante
-dell’infrastruttura **Hermeticum B.C.E.**.
+- **Continuità cognitiva**
+  - dialogo con NeuroLoop
+  - tracciamento logico delle revisioni decisionali
 
 ---
 
-**Fine del documento.**
+## Cosa NON fa
+
+❌ non esegue commit  
+❌ non crea prova crittografica  
+❌ non rende nulla opponibile da solo  
+
+> Se non passa da **GitJoker**, non è ufficiale.
+
+---
+
+## Relazione con GitJoker (catena C2)
+
+```text
+AI Joker-C2
+  ↓ decide / struttura
+GitJoker
+  ↓ esegue / registra
+Sistema BCE
+---
+
+
