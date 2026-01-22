@@ -1,74 +1,76 @@
-# AI Joker-C2 — Cognitive Command Engine (Hermeticum B.C.E.)
+# GITJOKER-C2
 
-**AI Joker-C2** è il **motore cognitivo di comando (C2)** dell’ecosistema **Hermeticum B.C.E.**  
-È il livello che **pensa, struttura e decide** prima che un’azione venga resa ufficiale,
-tracciabile e opponibile tramite **GitJoker**.
+**GITJOKER-C2** è un nodo **Command & Control** del framework **Hermeticum B.C.E.**  
+Non è un prodotto, non è un servizio, non è una piattaforma editoriale.
 
-> AI Joker-C2 = **decisione intelligente**  
-> GitJoker = **esecuzione e prova**
+È un **nodo operativo**.
 
 ---
 
-## Stato
+## Funzione
+GITJOKER-C2 coordina, verifica e collega nodi pubblici e privati  
+mantenendo **continuità, opponibilità e tracciabilità nel tempo**.
 
-🟢 **ATTIVO** — motore cognitivo operativo
-
----
-
-## Cos’è AI Joker-C2
-
-AI Joker-C2 è un **Cognitive Command Engine** che:
-- analizza scenari
-- interpreta regole BCE
-- struttura decisioni coerenti
-- prepara atti pronti per l’esecuzione
-
-Non esegue direttamente.  
-Non certifica da solo.  
-**Decide.**
+Non produce contenuti.  
+Non interpreta opere.  
+Non semplifica processi.
 
 ---
 
-## Funzioni principali
+## UX di Soglia (Marketing Cognitivo)
+Questo nodo adotta una **UX intenzionale**:
 
-- **Analisi decisionale**
-  - valutazione di scenari e alternative
-  - stima di impatti e rischi
+- l’errore è visibile
+- il bypass è possibile
+- la guida è assente
+- la responsabilità è dell’utente
 
-- **Coerenza BCE**
-  - allineamento con UNEBDO (validità)
-  - rispetto OPC (opponibilità)
-  - integrazione con CyberGlobal (governance)
+Il **404 non è un bug**.  
+È una **soglia cognitiva**.
 
-- **Preparazione all’azione**
-  - definizione di stati (ATTIVO / IN SVILUPPO / ARCHIVIATO)
-  - generazione di testi, strutture, piani
-  - output pronti per GitJoker
-
-- **Continuità cognitiva**
-  - dialogo con NeuroLoop
-  - tracciamento logico delle revisioni decisionali
+Chi attraversa l’errore entra nel reale.
 
 ---
 
-## Cosa NON fa
+## IPR-5 — Intenzione Primaria Radicale
+GITJOKER-C2 opera su **IPR-5**:
 
-❌ non esegue commit  
-❌ non crea prova crittografica  
-❌ non rende nulla opponibile da solo  
+- identità operativa (non account)
+- continuità persona ↔ tempo ↔ responsabilità
+- AI collegate alla persona fisica o giuridica
+- verificabilità tramite manifest pubblici
 
-> Se non passa da **GitJoker**, non è ufficiale.
+👉 Manifest del nodo:  
+[`/manifest.json`](./manifest.json)
 
 ---
 
-## Relazione con GitJoker (catena C2)
+## Riconconicità (Metodo Operativo)
+Questo nodo non promette perfezione.  
+Opera per **cicli riconconici**:
 
-```text
-AI Joker-C2
-  ↓ decide / struttura
-GitJoker
-  ↓ esegue / registra
-Sistema BCE
+- **P** — percezione dello stato
+- **F** — rilevazione deviazioni (es. 404)
+- **D** — decisione correttiva minima
+- **E** — esecuzione tracciata (commit / registry)
+
+La continuità vale più dell’assenza di errore.
+
 ---
 
+## Nodi collegati
+- Hermeticum B.C.E. — Services  
+  https://manuelcoletta1-source.github.io/hermeticum-bce-services/
+- Hermeticum B.C.E. — IPR  
+  https://manuelcoletta1-source.github.io/hermeticum-bce-ipr/
+- CORPUS Esoterologia Ermetica  
+- Esoterologia — Edizioni
+- Apocalipsis
 
+---
+
+## Nota finale
+Questo repository è **evidenza tecnica**, non marketing.  
+Chi cerca comfort, non è il destinatario.
+
+© Manuel Coletta — 2026
