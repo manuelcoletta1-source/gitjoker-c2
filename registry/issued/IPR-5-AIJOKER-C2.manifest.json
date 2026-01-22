@@ -1,0 +1,42 @@
+{
+  "registry": "UE-IPR-REGISTRY",
+  "registry_version": "1.0.0",
+  "record_type": "Identity Primary Record",
+  "ipr": {
+    "id": "IPR-5",
+    "name": "AIJOKER-C2",
+    "category": "Operational AI Identity / C2 Node",
+    "status": "ACTIVE"
+  },
+  "host_environment": {
+    "name": "GitJoker-C2",
+    "repository": "https://github.com/manuelcoletta1-source/gitjoker-c2",
+    "public_page": "https://manuelcoletta1-source.github.io/gitjoker-c2/"
+  },
+  "holder": {
+    "responsible_identity": "IPR-3 — Manuel Coletta",
+    "jurisdiction": "European Union"
+  },
+  "integrity": {
+    "hash_algorithm": "SHA-256",
+    "hash": "INCOLLA_QUI_L_HASH_FREEZED"
+  },
+  "source_manifest": {
+    "file": "manifest.ipr5.json",
+    "repository": "https://github.com/manuelcoletta1-source/gitjoker-c2"
+  },
+  "legal_nature": {
+    "classification": "Technical documentary evidence",
+    "effect": "Chronological and identity evidence under EU law",
+    "certification": "None"
+  },
+  "timestamp": {
+    "method": "GitHub commit chronology",
+    "timezone": "UTC"
+  },
+  "author": {
+    "name": "Manuel Coletta",
+    "entity": "HERMETICUM B.C.E.",
+    "year": 2026
+  }
+}
