@@ -1,0 +1,49 @@
+{
+  "schema": "HBCE-IPR5-MANIFEST",
+  "schema_version": "1.0.0",
+  "ipr_version": "IPR-5",
+  "status": "ACTIVE",
+
+  "issuer": {
+    "framework": "B.C.E.Hermeticum",
+    "seal": "HERMETICUM B.C.E. S.r.l."
+  },
+
+  "node": {
+    "name": "GITJOKER-C2",
+    "role": "C2 / Command & Control node (non-editorial hub)",
+    "repo": "https://github.com/manuelcoletta1-source/gitjoker-c2",
+    "pages": "https://manuelcoletta1-source.github.io/gitjoker-c2/"
+  },
+
+  "intent": {
+    "ipr_meaning": "Intenzione Primaria Radicale",
+    "ux_principle": "Errore generativo + bypass attraversabile (marketing cognitivo)"
+  },
+
+  "issued": {
+    "issued_at": "2026-01-22T09:00:00+01:00",
+    "sequence": "GJC2-IPR5-0001"
+  },
+
+  "integrity": {
+    "hash_alg": "SHA-256",
+    "hash": "TO_BE_COMPUTED"
+  },
+
+  "anchors": {
+    "ipfs_cid": "OPTIONAL",
+    "bitcoin_txid": "OPTIONAL",
+    "ethereum_tx": "OPTIONAL"
+  },
+
+  "links": {
+    "iprs": "https://manuelcoletta1-source.github.io/hermeticum-bce-ipr/",
+    "services": "https://manuelcoletta1-source.github.io/hermeticum-bce-services/"
+  },
+
+  "notes": [
+    "Questo manifest definisce identità e ruolo del nodo GITJOKER-C2.",
+    "Non contiene dati sensibili: è un record tecnico opponibile via versionamento Git."
+  ]
+}
