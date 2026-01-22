@@ -3,26 +3,72 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>GitJoker — Decision Accountability & AI Safety (UE)</title>
-  <meta name="description" content="GitJoker è un Decision Gate Validator (C2) per identità operative, AI ad alto rischio e cybersecurity. Fail-closed, accountability, audit-ready. UE / Horizon compatible." />
+  <title>GitJoker — AIJOKER-C2 | Decision Accountability (UE)</title>
+
+  <meta name="description"
+        content="GitJoker (AIJOKER-C2) è un Decision Gate Validator per AI ad alto rischio, cybersecurity e C2. Fail-closed, accountability, audit-ready. UE / Horizon compatible." />
+
+  <meta name="robots" content="index, follow" />
+
   <style>
     :root { color-scheme: dark; }
-    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#0b0c10; color:#e8e8e8; }
-    header, main, footer { max-width: 1020px; margin: 0 auto; padding: 22px; }
-    .card { border: 1px solid #24262b; border-radius: 16px; padding: 18px; background: #0f1117; }
-    h1 { margin: 0 0 6px 0; font-size: 28px; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: #0b0c10;
+      color: #e8e8e8;
+    }
+    header, main, footer {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .card {
+      background: #0f1117;
+      border: 1px solid #24262b;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+    h1 { margin: 0 0 6px 0; font-size: 30px; }
     h2 { margin: 22px 0 10px 0; font-size: 20px; }
-    h3 { margin: 18px 0 8px 0; font-size: 16px; }
-    p { margin: 8px 0; line-height: 1.5; color:#cfd2d6; }
-    ul { margin: 8px 0 8px 18px; color:#cfd2d6; }
+    h3 { margin: 16px 0 6px 0; font-size: 16px; }
+    p { margin: 8px 0; line-height: 1.5; color: #cfd2d6; }
+    ul { margin: 8px 0 8px 18px; color: #cfd2d6; }
     li { margin: 6px 0; }
-    .meta { font-size: 13px; color:#9aa2aa; }
     a { color: #d6b8ff; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
-    .tag { display:inline-block; padding: 4px 10px; border:1px solid #24262b; border-radius: 999px; font-size: 12px; color:#cfd2d6; background:#0b0c10; }
-    .btn { display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid #24262b; background:#0b0c10; margin-right:8px; }
-    code { background:#0b0c10; padding: 2px 6px; border-radius: 8px; border:1px solid #24262b; }
+    .meta { font-size: 13px; color: #9aa2aa; }
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border: 1px solid #24262b;
+      border-radius: 999px;
+      font-size: 12px;
+      background: #0b0c10;
+      color: #cfd2d6;
+      margin-right: 6px;
+      margin-top: 6px;
+    }
+    .grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid #24262b;
+      background: #0b0c10;
+      margin: 6px 6px 0 0;
+    }
+    code {
+      background: #0b0c10;
+      border: 1px solid #24262b;
+      border-radius: 8px;
+      padding: 2px 6px;
+    }
   </style>
 </head>
 
@@ -32,68 +78,59 @@
   <div class="card">
     <h1>GitJoker</h1>
     <p class="meta">
-      Decision Accountability · AI Safety · Cybersecurity · UE
+      AIJOKER-C2 · Decision Accountability · Cybersecurity · UE
     </p>
+
     <p>
       <strong>GitJoker</strong> è un <strong>Decision Gate Validator (C2)</strong> progettato per
-      impedire l’esecuzione di decisioni critiche quando mancano
-      attribuzione umana verificabile, verifica ex-ante o prova opponibile.
+      impedire l’esecuzione di decisioni critiche e automazioni ad alto rischio
+      quando mancano attribuzione umana verificabile, verifica ex-ante o prova opponibile.
     </p>
+
     <p>
-      Non prende decisioni.  
-      <strong>Blocca quelle che non dovrebbero passare.</strong>
+      GitJoker <strong>non decide</strong>.  
+      <strong>Blocca ciò che non è verificabile.</strong>
     </p>
-    <span class="tag">FAIL-CLOSED</span>
-    <span class="tag">AI Act Ready</span>
-    <span class="tag">NIS2 / CER</span>
-    <span class="tag">Horizon Europe</span>
+
+    <div>
+      <span class="tag">FAIL-CLOSED</span>
+      <span class="tag">AI Act Ready</span>
+      <span class="tag">NIS2 / CER</span>
+      <span class="tag">Horizon Europe</span>
+      <span class="tag">Audit-Ready</span>
+    </div>
+
+    <div>
+      <a class="btn" href="./README.md">Leggi il README</a>
+      <a class="btn" href="./manifest.json">Manifest GitJoker</a>
+      <a class="btn" href="https://manuelcoletta1-source.github.io/ue-ipr-registry/">Registro UE IPR</a>
+      <a class="btn" href="https://github.com/manuelcoletta1-source/gitjoker-c2">Repository</a>
+    </div>
   </div>
 </header>
 
 <main>
 
   <section class="card">
-    <h2>Perché serve</h2>
-    <p>
-      I sistemi digitali e di IA ad alto rischio soffrono di tre problemi strutturali:
-    </p>
+    <h2>Identità del Sistema</h2>
     <ul>
-      <li>decisioni eseguite senza attribuzione umana opponibile</li>
-      <li>automazioni che agiscono senza verifica ex-ante</li>
-      <li>prove che decadono o non sono difendibili nel tempo</li>
+      <li><strong>Nome IPR:</strong> GitJoker</li>
+      <li><strong>Nodo operativo canonico:</strong> <code>AIJOKER-C2</code></li>
+      <li><strong>Alias tecnico / endpoint:</strong> <code>GITJOKER-C2</code></li>
+      <li><strong>Categoria:</strong> Operational Digital Identity · C2</li>
+      <li><strong>Registrazione UE:</strong> IPR-5 — GitJoker (AIJOKER-C2)</li>
     </ul>
-    <p>
-      <strong>GitJoker esiste per ridurre il rischio sistemico</strong>
-      e impedire che errori, incidenti o escalation vengano giustificati con
-      “ha deciso l’algoritmo”.
-    </p>
   </section>
 
   <section class="card">
-    <h2>Cosa fa (in pratica)</h2>
+    <h2>Cosa fa</h2>
     <ul>
-      <li>verifica che ogni decisione critica sia attribuita a un umano reale (IPR / HRR)</li>
-      <li>valida integrità, tempo e policy <strong>prima</strong> dell’esecuzione</li>
-      <li>applica modalità <strong>FAIL-CLOSED</strong> se manca anche un solo requisito</li>
-      <li>genera log e prove machine-readable, auditabili offline</li>
+      <li>verifica attribuzione umana reale prima dell’esecuzione</li>
+      <li>valida integrità, tempo e policy ex-ante</li>
+      <li>applica modalità <strong>FAIL-CLOSED</strong> in caso di mancanza requisiti</li>
+      <li>genera evidenze auditabili e verificabili offline</li>
+      <li>mantiene continuità tramite versionamento pubblico</li>
     </ul>
-
-    <p class="meta">
-      FAIL non è un errore. FAIL è protezione del sistema.
-    </p>
-  </section>
-
-  <section class="card">
-    <h2>Cosa NON è</h2>
-    <ul>
-      <li>non è un sistema politico</li>
-      <li>non è un’identità civile o alternativa</li>
-      <li>non è un’autorità morale</li>
-      <li>non è un’AI decisionale autonoma</li>
-    </ul>
-    <p>
-      GitJoker introduce <strong>vincoli tecnici di realtà</strong>, non ideologia.
-    </p>
   </section>
 
   <section class="card">
@@ -103,12 +140,12 @@
         <h3>Cybersecurity & C2</h3>
         <ul>
           <li>command & control</li>
-          <li>cyber-defence</li>
           <li>incident prevention</li>
+          <li>cyber-defence</li>
         </ul>
       </div>
       <div>
-        <h3>IA ad alto rischio</h3>
+        <h3>AI ad Alto Rischio</h3>
         <ul>
           <li>AI Act UE</li>
           <li>human-in-the-loop reale</li>
@@ -116,7 +153,7 @@
         </ul>
       </div>
       <div>
-        <h3>Infrastrutture critiche</h3>
+        <h3>Infrastrutture Critiche</h3>
         <ul>
           <li>energia, trasporti, TLC</li>
           <li>sanità critica</li>
@@ -129,35 +166,19 @@
   <section class="card">
     <h2>Allineamento UE</h2>
     <ul>
-      <li><strong>AI Act:</strong> attribuzione, HITL reale, logging, fail-closed</li>
-      <li><strong>NIS2 / CER:</strong> prevenzione incidenti, accountability</li>
-      <li><strong>eIDAS / ETSI:</strong> integrità, LTA, prova opponibile</li>
-      <li><strong>Horizon Europe:</strong> TRL progressivo, audit-ready</li>
+      <li><strong>AI Act:</strong> attribuzione, logging, controllo umano</li>
+      <li><strong>NIS2 / CER:</strong> prevenzione incidenti e accountability</li>
+      <li><strong>eIDAS / ETSI:</strong> integrità e prova opponibile</li>
+      <li><strong>Horizon Europe:</strong> ricerca applicata, TRL progressivo</li>
     </ul>
-  </section>
-
-  <section class="card">
-    <h2>Identità e Registro UE</h2>
-    <p>
-      GitJoker è registrato come:
-    </p>
-    <ul>
-      <li><strong>IPR-5 — GitJoker (AIJOKER-C2)</strong></li>
-      <li>Registro UE IPR (public experimental)</li>
-    </ul>
-    <p>
-      <a class="btn" href="https://manuelcoletta1-source.github.io/ue-ipr-registry/">Registro UE IPR</a>
-      <a class="btn" href="./manifest.json">Manifest GitJoker</a>
-      <a class="btn" href="https://github.com/manuelcoletta1-source/gitjoker-c2">Repository</a>
-    </p>
   </section>
 
 </main>
 
 <footer>
   <p class="meta">
-    GitJoker · AIJOKER-C2 · Hermeticum B.C.E. · UE<br/>
-    Decision accountability before execution. Proof that does not expire.
+    GitJoker · AIJOKER-C2 · Hermeticum B.C.E. · Unione Europea<br/>
+    Decision accountability before execution.
   </p>
 </footer>
 
