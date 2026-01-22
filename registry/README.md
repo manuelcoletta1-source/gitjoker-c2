@@ -1,8 +1,23 @@
-# Registry
+# GITJOKER-C2 — Registry (Issued)
 
-Questa cartella ospita registri interni relativi a:
-- versioni operative;
-- mapping tra release e prove esterne;
-- riferimenti a hash, CID o anchor temporali.
+Registro delle emissioni **IPR** del nodo **GITJOKER-C2**.  
+Questo registro è parte del ciclo di **riconconicità**: continuità, non perfezione.
 
-Regola: ogni elemento inserito deve indicare data, versione e commit di riferimento.
+---
+
+## Issued
+
+### GJC2-IPR5-0001
+- **Stato:** ACTIVE
+- **Tipo:** IPR-5
+- **Nodo:** GITJOKER-C2
+- **Manifest:**  
+  [`/manifest.json`](../../manifest.json)
+
+---
+
+## Metodo
+Ogni emissione qui elencata:
+- è tracciata via Git
+- non viene sovrascritta
+- mantiene continuità storica
