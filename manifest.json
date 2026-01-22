@@ -1,49 +1,72 @@
 {
-  "schema": "HBCE-IPR5-MANIFEST",
+  "schema": "UE-IPR-CORE",
   "schema_version": "1.0.0",
-  "ipr_version": "IPR-5",
-  "status": "ACTIVE",
-
-  "issuer": {
-    "framework": "B.C.E.Hermeticum",
-    "seal": "HERMETICUM B.C.E. S.r.l."
+  "record": {
+    "ipr_id": "IPR-5",
+    "name": "AIJOKER-C2",
+    "category": "Operational AI Identity / C2 Node",
+    "status": "ACTIVE"
   },
-
-  "node": {
-    "name": "GITJOKER-C2",
-    "role": "C2 / Command & Control node (non-editorial hub)",
-    "repo": "https://github.com/manuelcoletta1-source/gitjoker-c2",
-    "pages": "https://manuelcoletta1-source.github.io/gitjoker-c2/"
+  "host_environment": {
+    "name": "GitJoker-C2",
+    "role": "Reference implementation and operational environment for IPR issuance and management",
+    "repository": "https://github.com/manuelcoletta1-source/gitjoker-c2",
+    "public_page": "https://manuelcoletta1-source.github.io/gitjoker-c2/"
   },
-
-  "intent": {
-    "ipr_meaning": "Intenzione Primaria Radicale",
-    "ux_principle": "Errore generativo + bypass attraversabile (marketing cognitivo)"
+  "holder": {
+    "type": "system",
+    "responsible_identity": "IPR-3 — Manuel Coletta",
+    "jurisdiction": "European Union"
   },
-
-  "issued": {
-    "issued_at": "2026-01-22T09:00:00+01:00",
-    "sequence": "GJC2-IPR5-0001"
+  "purpose": {
+    "function": [
+      "identity_emission",
+      "identity_continuity",
+      "decision_traceability",
+      "ai_accountability",
+      "governance_support"
+    ],
+    "positioning": "Technical standard candidate for digital responsibility and cybersecurity"
   },
-
+  "core_principles": {
+    "decision": "Every operational action originates from an explicit decision",
+    "cost": "Every decision implies an irreversible cost",
+    "trace": "Every action produces a verifiable trace",
+    "time": "Every record is exposed to temporal verification and decay"
+  },
+  "technical_properties": {
+    "immutability": "Versioned via public repository commits",
+    "traceability": "Hash-based integrity with public timestamps",
+    "auditability": "Fully inspectable through public artifacts",
+    "non_repudiation": "Anchored evidence prevents denial of issued records"
+  },
   "integrity": {
-    "hash_alg": "SHA-256",
-    "hash": "TO_BE_COMPUTED"
+    "hash_algorithm": "SHA-256",
+    "hash": "TO_BE_FILLED_AFTER_FREEZE"
   },
-
-  "anchors": {
-    "ipfs_cid": "OPTIONAL",
-    "bitcoin_txid": "OPTIONAL",
-    "ethereum_tx": "OPTIONAL"
+  "registry": {
+    "type": "public_experimental_registry",
+    "reference": "UE IPR Registry",
+    "registry_url": "https://manuelcoletta1-source.github.io/ue-ipr-registry/"
   },
-
-  "links": {
-    "iprs": "https://manuelcoletta1-source.github.io/hermeticum-bce-ipr/",
-    "services": "https://manuelcoletta1-source.github.io/hermeticum-bce-services/"
+  "interoperability": {
+    "eidAS": "Complementary layer (non-substitutive)",
+    "ai_act": "Supports AI accountability and traceability",
+    "cybersecurity_act": "Provides technical evidence for responsibility chains"
   },
-
-  "notes": [
-    "Questo manifest definisce identità e ruolo del nodo GITJOKER-C2.",
-    "Non contiene dati sensibili: è un record tecnico opponibile via versionamento Git."
-  ]
+  "legal_nature": {
+    "classification": "Technical documentary evidence",
+    "certification": "None",
+    "legal_effect": "Chronological and identity evidence under EU law"
+  },
+  "lifecycle": {
+    "issuance": "Manual or assisted via AIJOKER-C2 hosted in GitJoker-C2",
+    "continuity": "Maintained through versioned updates",
+    "decay": "Possible if traceability conditions are not met"
+  },
+  "author": {
+    "name": "Manuel Coletta",
+    "entity": "HERMETICUM B.C.E.",
+    "year": 2026
+  }
 }
