@@ -1,76 +1,120 @@
-# GITJOKER-C2
-
-**GITJOKER-C2** è un nodo **Command & Control** del framework **Hermeticum B.C.E.**  
-Non è un prodotto, non è un servizio, non è una piattaforma editoriale.
-
-È un **nodo operativo**.
+# GitJoker — AIJOKER-C2
+## Decision Accountability · AI Safety · Cybersecurity (UE)
 
 ---
 
-## Funzione
-GITJOKER-C2 coordina, verifica e collega nodi pubblici e privati  
-mantenendo **continuità, opponibilità e tracciabilità nel tempo**.
+## Cos’è GitJoker
+**GitJoker** è un **Decision Gate Validator (C2)** progettato per garantire che  
+**decisioni critiche e azioni automatizzate non vengano eseguite** in assenza di:
 
-Non produce contenuti.  
-Non interpreta opere.  
-Non semplifica processi.
+- attribuzione umana verificabile
+- verifica ex-ante dei requisiti
+- tracciabilità e prova opponibile nel tempo
 
----
-
-## UX di Soglia (Marketing Cognitivo)
-Questo nodo adotta una **UX intenzionale**:
-
-- l’errore è visibile
-- il bypass è possibile
-- la guida è assente
-- la responsabilità è dell’utente
-
-Il **404 non è un bug**.  
-È una **soglia cognitiva**.
-
-Chi attraversa l’errore entra nel reale.
+GitJoker **non prende decisioni**.  
+**Blocca** l’esecuzione quando le condizioni di sicurezza, responsabilità o compliance non sono soddisfatte.
 
 ---
 
-## IPR-5 — Intenzione Primaria Radicale
-GITJOKER-C2 opera su **IPR-5**:
+## Identità del Sistema
+- **Nome IPR:** GitJoker  
+- **Nodo operativo canonico:** **AIJOKER-C2**  
+- **Alias tecnico / endpoint:** GITJOKER-C2  
+- **Framework:** Hermeticum B.C.E.  
+- **Categoria:** Operational Digital Identity · Command & Control (C2)  
+- **Stato:** ACTIVE  
 
-- identità operativa (non account)
-- continuità persona ↔ tempo ↔ responsabilità
-- AI collegate alla persona fisica o giuridica
-- verificabilità tramite manifest pubblici
-
-👉 Manifest del nodo:  
-[`/manifest.json`](./manifest.json)
-
----
-
-## Riconconicità (Metodo Operativo)
-Questo nodo non promette perfezione.  
-Opera per **cicli riconconici**:
-
-- **P** — percezione dello stato
-- **F** — rilevazione deviazioni (es. 404)
-- **D** — decisione correttiva minima
-- **E** — esecuzione tracciata (commit / registry)
-
-La continuità vale più dell’assenza di errore.
+- **Registrazione UE:**  
+  IPR-5 — GitJoker (AIJOKER-C2)  
+  Registro UE IPR (public experimental)
 
 ---
 
-## Nodi collegati
-- Hermeticum B.C.E. — Services  
-  https://manuelcoletta1-source.github.io/hermeticum-bce-services/
-- Hermeticum B.C.E. — IPR  
-  https://manuelcoletta1-source.github.io/hermeticum-bce-ipr/
-- CORPUS Esoterologia Ermetica  
-- Esoterologia — Edizioni
-- Apocalipsis
+## Perché serve
+Nei sistemi digitali complessi e nell’IA ad alto rischio emergono criticità ricorrenti:
+
+- automazioni senza **responsabilità umana opponibile**
+- decisioni eseguite senza **verifica preventiva**
+- log non difendibili nel tempo
+- escalation giustificate da “ha deciso l’algoritmo”
+
+**GitJoker riduce il rischio sistemico** introducendo un vincolo tecnico semplice:
+> *se non è verificabile, non passa.*
 
 ---
 
-## Nota finale
-Questo repository è **evidenza tecnica**, non marketing.  
-Chi cerca comfort, non è il destinatario.
+## Cosa fa (funzionalità chiave)
+- valida l’attribuzione umana reale (IPR / identità operativa)
+- verifica integrità, tempo e policy **prima** dell’esecuzione
+- applica modalità **FAIL-CLOSED** in caso di mancanza di requisiti
+- produce evidenze machine-readable e auditabili offline
+- mantiene continuità tramite versionamento pubblico
 
-© Manuel Coletta — 2026
+---
+
+## Cosa NON è
+- non è un sistema politico
+- non è un’identità civile o alternativa
+- non è un’autorità normativa
+- non è un’IA decisionale autonoma
+
+GitJoker introduce **vincoli tecnici di realtà**, non giudizi o ideologia.
+
+---
+
+## Ambiti di Applicazione
+### Cybersecurity & C2
+- command & control sicuro
+- prevenzione escalation automatica
+- governance tecnica dei nodi
+
+### IA ad Alto Rischio
+- AI Act UE
+- human-in-the-loop reale
+- mitigazione del rischio ex-ante
+
+### Infrastrutture Critiche
+- energia, trasporti, telecomunicazioni
+- sanità critica
+- ambienti OT / ICS
+
+---
+
+## Allineamento Normativo UE
+GitJoker è progettato in coerenza con:
+
+- **AI Act UE**  
+  attribuzione, logging, controllo umano, fail-closed
+- **NIS2 / CER**  
+  prevenzione incidenti, accountability, resilienza
+- **eIDAS / ETSI**  
+  integrità, evidenza temporale, prova opponibile
+- **Horizon Europe**  
+  TRL progressivo, audit-ready, ricerca applicata
+
+---
+
+## Verifica e Trasparenza
+- **Manifest UE IPR-5 (JSON):**  
+  `ipr5-gitjoker.manifest.json`
+- **Manifest nodo pubblico:**  
+  https://manuelcoletta1-source.github.io/gitjoker-c2/manifest.json
+- **Registro UE IPR:**  
+  https://manuelcoletta1-source.github.io/ue-ipr-registry/
+- **Repository:**  
+  https://github.com/manuelcoletta1-source/gitjoker-c2
+
+Ogni correzione o evoluzione avviene tramite **commit tracciato**.
+
+---
+
+## Stato del Progetto
+- **Maturità:** UE-ready / Horizon-compatible  
+- **Approccio:** sperimentale, documentato, verificabile  
+- **Obiettivo:** accountability prima dell’esecuzione
+
+---
+
+© Hermeticum B.C.E. S.r.l. — Manuel Coletta  
+GitJoker · AIJOKER-C2  
+*Decision accountability before execution.*
