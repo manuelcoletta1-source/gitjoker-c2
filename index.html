@@ -1,155 +1,165 @@
 <!doctype html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>GITJOKER-C2 | Hermeticum B.C.E.</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GitJoker — Decision Accountability & AI Safety (UE)</title>
+  <meta name="description" content="GitJoker è un Decision Gate Validator (C2) per identità operative, AI ad alto rischio e cybersecurity. Fail-closed, accountability, audit-ready. UE / Horizon compatible." />
   <style>
-    body{
-      margin:0;
-      background:#0b0b0b;
-      color:#eaeaea;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      line-height:1.6;
-    }
-    header{
-      padding:3rem 1.5rem;
-      border-bottom:1px solid #222;
-    }
-    main{
-      padding:2rem 1.5rem;
-      max-width:1100px;
-    }
-    h1,h2,h3{
-      color:#ffffff;
-    }
-    h1{
-      margin:0 0 .6rem 0;
-      font-size:2.3rem;
-      letter-spacing:.04em;
-    }
-    h2{
-      margin-top:2.6rem;
-      font-size:1.45rem;
-      border-left:4px solid #ff6b6b;
-      padding-left:.6rem;
-    }
-    ul{ padding-left:1.2rem; }
-    li{ margin-bottom:.7rem; }
-    a{
-      color:#ff6b6b;
-      text-decoration:none;
-    }
-    a:hover{ text-decoration:underline; }
-    footer{
-      padding:1.5rem;
-      border-top:1px solid #222;
-      font-size:.8rem;
-      color:#777;
-    }
-    .tag{
-      color:#ff6b6b;
-      font-weight:600;
-      font-size:.9rem;
-      letter-spacing:.08em;
-    }
+    :root { color-scheme: dark; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#0b0c10; color:#e8e8e8; }
+    header, main, footer { max-width: 1020px; margin: 0 auto; padding: 22px; }
+    .card { border: 1px solid #24262b; border-radius: 16px; padding: 18px; background: #0f1117; }
+    h1 { margin: 0 0 6px 0; font-size: 28px; }
+    h2 { margin: 22px 0 10px 0; font-size: 20px; }
+    h3 { margin: 18px 0 8px 0; font-size: 16px; }
+    p { margin: 8px 0; line-height: 1.5; color:#cfd2d6; }
+    ul { margin: 8px 0 8px 18px; color:#cfd2d6; }
+    li { margin: 6px 0; }
+    .meta { font-size: 13px; color:#9aa2aa; }
+    a { color: #d6b8ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .tag { display:inline-block; padding: 4px 10px; border:1px solid #24262b; border-radius: 999px; font-size: 12px; color:#cfd2d6; background:#0b0c10; }
+    .btn { display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid #24262b; background:#0b0c10; margin-right:8px; }
+    code { background:#0b0c10; padding: 2px 6px; border-radius: 8px; border:1px solid #24262b; }
   </style>
 </head>
 
 <body>
-  <header>
-    <span class="tag">C2 NODE · COMMAND & CONTROL</span>
-    <h1>GITJOKER-C2</h1>
-    <p>
-      Nodo tecnico di <strong>Command &amp; Control</strong> per il coordinamento
-      dei nodi pubblici e delle infrastrutture di <strong>Hermeticum B.C.E.</strong><br>
-      Funzione: orchestrazione, verifica, collegamento. Non editoriale.
+
+<header>
+  <div class="card">
+    <h1>GitJoker</h1>
+    <p class="meta">
+      Decision Accountability · AI Safety · Cybersecurity · UE
     </p>
-  </header>
+    <p>
+      <strong>GitJoker</strong> è un <strong>Decision Gate Validator (C2)</strong> progettato per
+      impedire l’esecuzione di decisioni critiche quando mancano
+      attribuzione umana verificabile, verifica ex-ante o prova opponibile.
+    </p>
+    <p>
+      Non prende decisioni.  
+      <strong>Blocca quelle che non dovrebbero passare.</strong>
+    </p>
+    <span class="tag">FAIL-CLOSED</span>
+    <span class="tag">AI Act Ready</span>
+    <span class="tag">NIS2 / CER</span>
+    <span class="tag">Horizon Europe</span>
+  </div>
+</header>
 
-  <main>
+<main>
 
-    <h2>Identità del nodo</h2>
+  <section class="card">
+    <h2>Perché serve</h2>
+    <p>
+      I sistemi digitali e di IA ad alto rischio soffrono di tre problemi strutturali:
+    </p>
     <ul>
-      <li><strong>Nome:</strong> GITJOKER-C2</li>
-      <li><strong>Tipo:</strong> Nodo C2 (Command &amp; Control)</li>
-      <li><strong>Dominio:</strong> Tecnico / Coordinamento</li>
-      <li><strong>Stato:</strong> ACTIVE</li>
-      <li><strong>Framework di riferimento:</strong> Hermeticum B.C.E.</li>
+      <li>decisioni eseguite senza attribuzione umana opponibile</li>
+      <li>automazioni che agiscono senza verifica ex-ante</li>
+      <li>prove che decadono o non sono difendibili nel tempo</li>
+    </ul>
+    <p>
+      <strong>GitJoker esiste per ridurre il rischio sistemico</strong>
+      e impedire che errori, incidenti o escalation vengano giustificati con
+      “ha deciso l’algoritmo”.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Cosa fa (in pratica)</h2>
+    <ul>
+      <li>verifica che ogni decisione critica sia attribuita a un umano reale (IPR / HRR)</li>
+      <li>valida integrità, tempo e policy <strong>prima</strong> dell’esecuzione</li>
+      <li>applica modalità <strong>FAIL-CLOSED</strong> se manca anche un solo requisito</li>
+      <li>genera log e prove machine-readable, auditabili offline</li>
     </ul>
 
-    <h2>Funzione</h2>
-    <p>
-      GITJOKER-C2 svolge funzione di <strong>nodo tecnico di coordinamento</strong>.
-      Non produce contenuti editoriali, non interpreta opere,
-      non stabilisce gerarchie semantiche.
+    <p class="meta">
+      FAIL non è un errore. FAIL è protezione del sistema.
     </p>
-    <p>
-      Collega nodi già esposti, supporta la verifica pubblica,
-      e consente l’orchestrazione C2 dei moduli e delle infrastrutture.
-    </p>
+  </section>
 
-    <h2>Nodi collegati (Index Hub C2)</h2>
+  <section class="card">
+    <h2>Cosa NON è</h2>
     <ul>
-      <li>
-        <strong>Hermeticum B.C.E. — Services</strong><br>
-        <a href="https://manuelcoletta1-source.github.io/hermeticum-bce-services/">
-          https://manuelcoletta1-source.github.io/hermeticum-bce-services/
-        </a>
-      </li>
-
-      <li>
-        <strong>EU IPR Registry</strong><br>
-        <a href="https://manuelcoletta1-source.github.io/ue-ipr-registry/">
-          https://manuelcoletta1-source.github.io/ue-ipr-registry/
-        </a>
-      </li>
-
-      <li>
-        <strong>ESOTEROLOGIA — Edizioni (IPR-5)</strong><br>
-        <a href="https://manuelcoletta1-source.github.io/esoterologia-edizioni-ipr5/">
-          https://manuelcoletta1-source.github.io/esoterologia-edizioni-ipr5/
-        </a>
-      </li>
-
-      <li>
-        <strong>CORPUS ESOTEROLOGIA ERMETICA</strong><br>
-        <a href="https://manuelcoletta1-source.github.io/corpus-esoterologia-ermetica/">
-          https://manuelcoletta1-source.github.io/corpus-esoterologia-ermetica/
-        </a>
-      </li>
-
-      <li>
-        <strong>APOCALIPSIS</strong><br>
-        <a href="https://manuelcoletta1-source.github.io/apocalipsis/">
-          https://manuelcoletta1-source.github.io/apocalipsis/
-        </a>
-      </li>
-
-      <li>
-        <strong>IL PORTALE DELL’ANTICRISTO</strong><br>
-        <a href="https://manuelcoletta1-source.github.io/IL-PORTALE-DELL--ANTICRISTO/">
-          https://manuelcoletta1-source.github.io/IL-PORTALE-DELL--ANTICRISTO/
-        </a>
-      </li>
+      <li>non è un sistema politico</li>
+      <li>non è un’identità civile o alternativa</li>
+      <li>non è un’autorità morale</li>
+      <li>non è un’AI decisionale autonoma</li>
     </ul>
-
-    <h2>Nota operativa</h2>
     <p>
-      Ogni nodo mantiene il proprio regime di validità,
-      opponibilità e possibile decadenza nel tempo.
+      GitJoker introduce <strong>vincoli tecnici di realtà</strong>, non ideologia.
     </p>
+  </section>
+
+  <section class="card">
+    <h2>Dove si applica</h2>
+    <div class="grid">
+      <div>
+        <h3>Cybersecurity & C2</h3>
+        <ul>
+          <li>command & control</li>
+          <li>cyber-defence</li>
+          <li>incident prevention</li>
+        </ul>
+      </div>
+      <div>
+        <h3>IA ad alto rischio</h3>
+        <ul>
+          <li>AI Act UE</li>
+          <li>human-in-the-loop reale</li>
+          <li>risk mitigation ex-ante</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Infrastrutture critiche</h3>
+        <ul>
+          <li>energia, trasporti, TLC</li>
+          <li>sanità critica</li>
+          <li>OT / ICS</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Allineamento UE</h2>
+    <ul>
+      <li><strong>AI Act:</strong> attribuzione, HITL reale, logging, fail-closed</li>
+      <li><strong>NIS2 / CER:</strong> prevenzione incidenti, accountability</li>
+      <li><strong>eIDAS / ETSI:</strong> integrità, LTA, prova opponibile</li>
+      <li><strong>Horizon Europe:</strong> TRL progressivo, audit-ready</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Identità e Registro UE</h2>
     <p>
-      GITJOKER-C2 non fonda, non estende e non stabilizza:
-      <strong>coordina e verifica</strong>.
+      GitJoker è registrato come:
     </p>
+    <ul>
+      <li><strong>IPR-5 — GitJoker (AIJOKER-C2)</strong></li>
+      <li>Registro UE IPR (public experimental)</li>
+    </ul>
+    <p>
+      <a class="btn" href="https://manuelcoletta1-source.github.io/ue-ipr-registry/">Registro UE IPR</a>
+      <a class="btn" href="./manifest.json">Manifest GitJoker</a>
+      <a class="btn" href="https://github.com/manuelcoletta1-source/gitjoker-c2">Repository</a>
+    </p>
+  </section>
 
-  </main>
+</main>
 
-  <footer>
-    GITJOKER-C2 · Nodo C2 · Hermeticum B.C.E. · 2026<br>
-    © Manuel Coletta
-  </footer>
+<footer>
+  <p class="meta">
+    GitJoker · AIJOKER-C2 · Hermeticum B.C.E. · UE<br/>
+    Decision accountability before execution. Proof that does not expire.
+  </p>
+</footer>
+
 </body>
 </html>
-<a href="./manifest.json">Manifest IPR5 (verificabile)</a>
