@@ -1,0 +1,67 @@
+{
+  "schema": "UE-IPR-CORE",
+  "schema_version": "1.0.0",
+  "record": {
+    "ipr_id": "IPR-5",
+    "name": "GitJoker",
+    "node": "GITJOKER-C2",
+    "category": "Operational Digital Identity / C2 Reference Implementation",
+    "status": "ACTIVE"
+  },
+  "holder": {
+    "type": "system",
+    "responsible_identity": "IPR-3 — Manuel Coletta",
+    "jurisdiction": "European Union"
+  },
+  "purpose": {
+    "function": [
+      "identity_emission",
+      "identity_continuity",
+      "decision_traceability",
+      "ai_accountability",
+      "governance_support"
+    ],
+    "positioning": "Technical standard candidate for digital responsibility and cybersecurity"
+  },
+  "core_principles": {
+    "decision": "Every operational action originates from an explicit decision",
+    "cost": "Every decision implies an irreversible cost",
+    "trace": "Every action produces a verifiable trace",
+    "time": "Every record is exposed to temporal verification and decay"
+  },
+  "technical_properties": {
+    "immutability": "Versioned via public repository commits",
+    "traceability": "Hash-based integrity with public timestamps",
+    "auditability": "Fully inspectable through public artifacts",
+    "non_repudiation": "Anchored evidence prevents denial of issued records"
+  },
+  "integrity": {
+    "hash_algorithm": "SHA-256",
+    "hash": "TO_BE_FILLED_AFTER_FREEZE"
+  },
+  "registry": {
+    "type": "public_experimental_registry",
+    "reference": "UE IPR Registry",
+    "registry_url": "https://manuelcoletta1-source.github.io/ue-ipr-registry/"
+  },
+  "interoperability": {
+    "eidAS": "Complementary layer (non-substitutive)",
+    "ai_act": "Supports AI accountability and traceability",
+    "cybersecurity_act": "Provides technical evidence for responsibility chains"
+  },
+  "legal_nature": {
+    "classification": "Technical documentary evidence",
+    "certification": "None",
+    "legal_effect": "Chronological and identity evidence under EU law"
+  },
+  "lifecycle": {
+    "issuance": "Manual or assisted via GitJoker-C2",
+    "continuity": "Maintained through versioned updates",
+    "decay": "Possible if traceability conditions are not met"
+  },
+  "author": {
+    "name": "Manuel Coletta",
+    "entity": "HERMETICUM B.C.E.",
+    "year": 2026
+  }
+}
