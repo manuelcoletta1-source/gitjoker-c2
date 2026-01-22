@@ -1,119 +1,123 @@
-# GitJoker — Framework per Programmatori (UE)
-## Operare su Git assieme a AIJOKER-C2
+# GitJoker-C2
+## Identity Primary Record — Reference Implementation
+
+**GitJoker-C2** è l’ambiente operativo di riferimento per l’emissione,
+la gestione e la verifica degli **Identity Primary Record (IPR)**.
+
+Il progetto fornisce una **implementazione tecnica di riferimento**
+per sistemi di identità digitale avanzata, tracciabilità decisionale
+e responsabilità operativa, con posizionamento **UE-oriented** e
+compatibilità con programmi di ricerca e cybersicurezza europei.
 
 ---
 
-## Regola fondamentale di accesso
-**Solo chi possiede un Identity Primary Record (IPR) attivo può usare GitJoker ed operare come programmatore, assieme a AIJOKER-C2.**
+## Natura del Progetto
 
-Senza **IPR**:
-- GitJoker non abilita operazioni
-- AIJOKER-C2 non opera
-- il codice resta anonimo e non opponibile
+- **Tipologia:** Ambiente operativo / Toolchain (C2)
+- **Ruolo:** Reference implementation IPR
+- **Ambito:** Identità digitale · Cybersicurezza · Governance
+- **Tecnologia:** Git · Web · Manifest JSON · Hash · Timestamp
+- **Stato:** ATTIVO / SPERIMENTALE
+- **Orientamento:** Unione Europea
 
-Questo sistema è **fail-closed by design**.
-
----
-
-## Cos’è GitJoker (per chi programma)
-**GitJoker** è un **framework operativo** che consente al **programmatore umano**, **assieme a AIJOKER-C2**, di usare **Git** come **ambiente di lavoro reale**, non come semplice repository.
-
-GitJoker:
-- definisce **regole operative**
-- imposta **struttura di progetto**
-- vincola l’uso di AI a una **responsabilità umana verificabile**
-- rende il lavoro **UE-compatibile**
-
-Non è un IDE.  
-Non è un servizio cloud.  
-È **il modo corretto di programmare su Git** in ambito UE.
+GitJoker-C2 **non è un prodotto commerciale** e **non è un documento di identità civile**.
+È un **sistema tecnico** progettato per supportare la definizione di uno
+**standard europeo di responsabilità digitale**.
 
 ---
 
-## Ruolo di AIJOKER-C2
-**AIJOKER-C2** è il **nodo operativo** che assiste il programmatore nel perimetro del proprio IPR.
+## Identity Primary Record (IPR)
 
-Con AIJOKER-C2 puoi:
-- programmare con assistenza AI
-- generare codice, documentazione e manifest
-- mantenere coerenza tecnica e normativa
-- evolvere il progetto senza perdere continuità
+Un **Identity Primary Record (IPR)** è un record digitale primario che:
 
-AIJOKER-C2 **non sostituisce il programmatore**.  
-Opera **sotto controllo e responsabilità umana**.
+- ancora temporalmente l’esistenza di un soggetto o sistema
+- stabilisce una titolarità originaria verificabile
+- garantisce continuità identitaria nel tempo
+- rende opponibili decisioni, deleghe e azioni
+- separa persona, sistema, AI e responsabilità
 
----
-
-## Perché serve un IPR
-L’**IPR** è la condizione tecnica che:
-- identifica **chi programma**
-- collega il codice a una **persona reale o giuridica**
-- garantisce **continuità nel tempo**
-- abilita l’uso di AI in modo opponibile
-
-👉 **IPR → GitJoker → AIJOKER-C2** è la catena minima operativa.
+L’IPR opera **a monte** di:
+- certificati
+- firme
+- credenziali
+- registrazioni settoriali
 
 ---
 
-## Cosa puoi fare con GitJoker (se hai un IPR)
+## Ruolo di GitJoker-C2
 
-### Programmare con AI
-- usare AIJOKER-C2 come assistente operativo
-- mantenere il controllo umano sul codice
-- evitare automazioni non attribuibili
+GitJoker-C2 funge da:
 
----
+- **ambiente di emissione** degli IPR
+- **strumento di gestione** della continuità identitaria
+- **interfaccia operativa** per progetti UE / Horizon
+- **reference implementation** per sperimentazione e audit
 
-### Creare un prodotto IPR su Git
-Con GitJoker:
-- il repository **diventa il prodotto**
-- il codice è **parte dell’identità**
-- ogni commit è **traccia operativa**
-- la storia del progetto **non decade**
-
-Non stai solo scrivendo codice.  
-Stai costruendo un **artefatto IPR**.
+In particolare, GitJoker consente di:
+- creare e versionare IPR personali e di sistema
+- collegare AI a identità responsabili
+- tracciare decisioni e deleghe operative
+- produrre evidenza tecnica opponibile
 
 ---
 
-### Costruire progetti Horizon Europe
-GitJoker consente al programmatore di:
-- strutturare repository **Horizon-compatible**
-- separare chiaramente:
-  - identità (IPR)
-  - progetto
-  - output
-- dimostrare governance, maturità e tracciabilità
+## Integrazione nell’Ecosistema
 
-Il progetto resta **leggibile e verificabile** anche nel tempo.
+GitJoker-C2 opera in sinergia con:
 
----
-
-## Cosa GitJoker NON permette
-- programmazione anonima
-- uso di AI senza titolare IPR
-- codice senza responsabilità
-- progetti senza continuità
-
-Se manca l’IPR, **GitJoker blocca**.
+- **UE IPR Registry** — registro pubblico sperimentale
+- **IPR-3** — record primario di identità personale
+- **IPR-5** — record primario di identità di sistema
+- **OPC (Opponible Policy Core)** — governance e policy opponibili
+- **Corpus Esoterologia Ermetica** — fondazione teorica e disciplinare
 
 ---
 
-## Flusso operativo
+## Posizionamento UE
+
+Il progetto è concepito come:
+
+- **standard tecnico sperimentale**
+- **layer di cybersicurezza**
+- **strumento di responsabilità digitale**
+- **supporto a identità e AI accountability**
+
+GitJoker-C2 è progettato per essere:
+- interoperabile
+- auditabile
+- anti-retroattivo
+- compatibile con eIDAS come strato complementare
+
 ---
 
-## Posizionamento canonico
-> **GitJoker è il framework che consente di programmare su Git solo tramite IPR, assieme a AIJOKER-C2, per creare prodotti IPR e progetti Horizon Europe in modo operativo e verificabile.**
+## Utilizzo Previsto
+
+- Ricerca e innovazione (Horizon Europe)
+- Progetti pilota di cybersicurezza
+- Identità digitale avanzata
+- Governance computabile
+- Sistemi AI responsabili
 
 ---
 
-## Riferimenti
-- **Registro UE IPR:** https://manuelcoletta1-source.github.io/ue-ipr-registry/
-- **Nodo GitJoker:** https://manuelcoletta1-source.github.io/gitjoker-c2/
-- **Repository:** https://github.com/manuelcoletta1-source/gitjoker-c2
+## Avvertenze
+
+Questo repository:
+- **non rilascia certificazioni**
+- **non sostituisce registri ufficiali**
+- **non produce identità legali**
+
+Costituisce **evidenza tecnica documentale**
+utilizzabile come supporto cronologico e identitario.
 
 ---
 
-© Hermeticum B.C.E. S.r.l. — Manuel Coletta  
-GitJoker · AIJOKER-C2  
-*Programmare è un atto responsabile.*
+## Autore e Promotore
+
+**Manuel Coletta**  
+Fondatore — HERMETICUM B.C.E.  
+Giurisdizione di riferimento: **Unione Europea**
+
+---
+
+© 2026 — GitJoker-C2 · Identity Primary Record · Reference Implementation
