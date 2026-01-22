@@ -1,120 +1,119 @@
-# GitJoker — AIJOKER-C2
-## Decision Accountability · AI Safety · Cybersecurity (UE)
+# GitJoker — Framework per Programmatori (UE)
+## Operare su Git assieme a AIJOKER-C2
 
 ---
 
-## Cos’è GitJoker
-**GitJoker** è un **Decision Gate Validator (C2)** progettato per garantire che  
-**decisioni critiche e azioni automatizzate non vengano eseguite** in assenza di:
+## Regola fondamentale di accesso
+**Solo chi possiede un Identity Primary Record (IPR) attivo può usare GitJoker ed operare come programmatore, assieme a AIJOKER-C2.**
 
-- attribuzione umana verificabile
-- verifica ex-ante dei requisiti
-- tracciabilità e prova opponibile nel tempo
+Senza **IPR**:
+- GitJoker non abilita operazioni
+- AIJOKER-C2 non opera
+- il codice resta anonimo e non opponibile
 
-GitJoker **non prende decisioni**.  
-**Blocca** l’esecuzione quando le condizioni di sicurezza, responsabilità o compliance non sono soddisfatte.
-
----
-
-## Identità del Sistema
-- **Nome IPR:** GitJoker  
-- **Nodo operativo canonico:** **AIJOKER-C2**  
-- **Alias tecnico / endpoint:** GITJOKER-C2  
-- **Framework:** Hermeticum B.C.E.  
-- **Categoria:** Operational Digital Identity · Command & Control (C2)  
-- **Stato:** ACTIVE  
-
-- **Registrazione UE:**  
-  IPR-5 — GitJoker (AIJOKER-C2)  
-  Registro UE IPR (public experimental)
+Questo sistema è **fail-closed by design**.
 
 ---
 
-## Perché serve
-Nei sistemi digitali complessi e nell’IA ad alto rischio emergono criticità ricorrenti:
+## Cos’è GitJoker (per chi programma)
+**GitJoker** è un **framework operativo** che consente al **programmatore umano**, **assieme a AIJOKER-C2**, di usare **Git** come **ambiente di lavoro reale**, non come semplice repository.
 
-- automazioni senza **responsabilità umana opponibile**
-- decisioni eseguite senza **verifica preventiva**
-- log non difendibili nel tempo
-- escalation giustificate da “ha deciso l’algoritmo”
+GitJoker:
+- definisce **regole operative**
+- imposta **struttura di progetto**
+- vincola l’uso di AI a una **responsabilità umana verificabile**
+- rende il lavoro **UE-compatibile**
 
-**GitJoker riduce il rischio sistemico** introducendo un vincolo tecnico semplice:
-> *se non è verificabile, non passa.*
-
----
-
-## Cosa fa (funzionalità chiave)
-- valida l’attribuzione umana reale (IPR / identità operativa)
-- verifica integrità, tempo e policy **prima** dell’esecuzione
-- applica modalità **FAIL-CLOSED** in caso di mancanza di requisiti
-- produce evidenze machine-readable e auditabili offline
-- mantiene continuità tramite versionamento pubblico
+Non è un IDE.  
+Non è un servizio cloud.  
+È **il modo corretto di programmare su Git** in ambito UE.
 
 ---
 
-## Cosa NON è
-- non è un sistema politico
-- non è un’identità civile o alternativa
-- non è un’autorità normativa
-- non è un’IA decisionale autonoma
+## Ruolo di AIJOKER-C2
+**AIJOKER-C2** è il **nodo operativo** che assiste il programmatore nel perimetro del proprio IPR.
 
-GitJoker introduce **vincoli tecnici di realtà**, non giudizi o ideologia.
+Con AIJOKER-C2 puoi:
+- programmare con assistenza AI
+- generare codice, documentazione e manifest
+- mantenere coerenza tecnica e normativa
+- evolvere il progetto senza perdere continuità
 
----
-
-## Ambiti di Applicazione
-### Cybersecurity & C2
-- command & control sicuro
-- prevenzione escalation automatica
-- governance tecnica dei nodi
-
-### IA ad Alto Rischio
-- AI Act UE
-- human-in-the-loop reale
-- mitigazione del rischio ex-ante
-
-### Infrastrutture Critiche
-- energia, trasporti, telecomunicazioni
-- sanità critica
-- ambienti OT / ICS
+AIJOKER-C2 **non sostituisce il programmatore**.  
+Opera **sotto controllo e responsabilità umana**.
 
 ---
 
-## Allineamento Normativo UE
-GitJoker è progettato in coerenza con:
+## Perché serve un IPR
+L’**IPR** è la condizione tecnica che:
+- identifica **chi programma**
+- collega il codice a una **persona reale o giuridica**
+- garantisce **continuità nel tempo**
+- abilita l’uso di AI in modo opponibile
 
-- **AI Act UE**  
-  attribuzione, logging, controllo umano, fail-closed
-- **NIS2 / CER**  
-  prevenzione incidenti, accountability, resilienza
-- **eIDAS / ETSI**  
-  integrità, evidenza temporale, prova opponibile
-- **Horizon Europe**  
-  TRL progressivo, audit-ready, ricerca applicata
+👉 **IPR → GitJoker → AIJOKER-C2** è la catena minima operativa.
 
 ---
 
-## Verifica e Trasparenza
-- **Manifest UE IPR-5 (JSON):**  
-  `ipr5-gitjoker.manifest.json`
-- **Manifest nodo pubblico:**  
-  https://manuelcoletta1-source.github.io/gitjoker-c2/manifest.json
-- **Registro UE IPR:**  
-  https://manuelcoletta1-source.github.io/ue-ipr-registry/
-- **Repository:**  
-  https://github.com/manuelcoletta1-source/gitjoker-c2
+## Cosa puoi fare con GitJoker (se hai un IPR)
 
-Ogni correzione o evoluzione avviene tramite **commit tracciato**.
+### Programmare con AI
+- usare AIJOKER-C2 come assistente operativo
+- mantenere il controllo umano sul codice
+- evitare automazioni non attribuibili
 
 ---
 
-## Stato del Progetto
-- **Maturità:** UE-ready / Horizon-compatible  
-- **Approccio:** sperimentale, documentato, verificabile  
-- **Obiettivo:** accountability prima dell’esecuzione
+### Creare un prodotto IPR su Git
+Con GitJoker:
+- il repository **diventa il prodotto**
+- il codice è **parte dell’identità**
+- ogni commit è **traccia operativa**
+- la storia del progetto **non decade**
+
+Non stai solo scrivendo codice.  
+Stai costruendo un **artefatto IPR**.
+
+---
+
+### Costruire progetti Horizon Europe
+GitJoker consente al programmatore di:
+- strutturare repository **Horizon-compatible**
+- separare chiaramente:
+  - identità (IPR)
+  - progetto
+  - output
+- dimostrare governance, maturità e tracciabilità
+
+Il progetto resta **leggibile e verificabile** anche nel tempo.
+
+---
+
+## Cosa GitJoker NON permette
+- programmazione anonima
+- uso di AI senza titolare IPR
+- codice senza responsabilità
+- progetti senza continuità
+
+Se manca l’IPR, **GitJoker blocca**.
+
+---
+
+## Flusso operativo
+---
+
+## Posizionamento canonico
+> **GitJoker è il framework che consente di programmare su Git solo tramite IPR, assieme a AIJOKER-C2, per creare prodotti IPR e progetti Horizon Europe in modo operativo e verificabile.**
+
+---
+
+## Riferimenti
+- **Registro UE IPR:** https://manuelcoletta1-source.github.io/ue-ipr-registry/
+- **Nodo GitJoker:** https://manuelcoletta1-source.github.io/gitjoker-c2/
+- **Repository:** https://github.com/manuelcoletta1-source/gitjoker-c2
 
 ---
 
 © Hermeticum B.C.E. S.r.l. — Manuel Coletta  
 GitJoker · AIJOKER-C2  
-*Decision accountability before execution.*
+*Programmare è un atto responsabile.*
