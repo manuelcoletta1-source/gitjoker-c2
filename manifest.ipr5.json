@@ -35,9 +35,10 @@
     "auditability": "Fully inspectable through public artifacts",
     "non_repudiation": "Anchored evidence prevents denial of issued records"
   },
-  "integrity": {
-    "hash_algorithm": "SHA-256",
-    "hash": "TO_BE_FILLED_AFTER_FREEZE"
+"integrity": {
+  "hash_algorithm": "SHA-256",
+  "hash": "INCOLLA_QUI_L_HASH"
+}
   },
   "registry": {
     "type": "public_experimental_registry",
