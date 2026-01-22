@@ -3,73 +3,43 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>GitJoker — AIJOKER-C2 | Decision Accountability (UE)</title>
-
-  <meta name="description"
-        content="GitJoker (AIJOKER-C2) è un Decision Gate Validator per AI ad alto rischio, cybersecurity e C2. Fail-closed, accountability, audit-ready. UE / Horizon compatible." />
-
+  <title>GitJoker — Framework per Programmatori (UE) | AIJOKER-C2</title>
+  <meta name="description" content="GitJoker è il framework operativo per programmatori: si opera su Git solo con IPR attivo, assieme a AIJOKER-C2. UE / Horizon-compatible, audit-ready." />
   <meta name="robots" content="index, follow" />
 
   <style>
     :root { color-scheme: dark; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: #0b0c10;
-      color: #e8e8e8;
-    }
-    header, main, footer {
-      max-width: 1040px;
-      margin: 0 auto;
-      padding: 24px;
-    }
-    .card {
-      background: #0f1117;
-      border: 1px solid #24262b;
-      border-radius: 16px;
-      padding: 20px;
-      margin-bottom: 16px;
-    }
-    h1 { margin: 0 0 6px 0; font-size: 30px; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#0b0c10; color:#e8e8e8; }
+    header, main, footer { max-width: 1040px; margin: 0 auto; padding: 24px; }
+    .card { background:#0f1117; border:1px solid #24262b; border-radius: 16px; padding: 20px; margin-bottom: 16px; }
+    h1 { margin:0 0 6px 0; font-size: 30px; }
     h2 { margin: 22px 0 10px 0; font-size: 20px; }
-    h3 { margin: 16px 0 6px 0; font-size: 16px; }
-    p { margin: 8px 0; line-height: 1.5; color: #cfd2d6; }
-    ul { margin: 8px 0 8px 18px; color: #cfd2d6; }
+    p { margin: 8px 0; line-height: 1.55; color:#cfd2d6; }
+    ul { margin: 8px 0 8px 18px; color:#cfd2d6; }
     li { margin: 6px 0; }
-    a { color: #d6b8ff; text-decoration: none; }
+    a { color:#d6b8ff; text-decoration:none; }
     a:hover { text-decoration: underline; }
-    .meta { font-size: 13px; color: #9aa2aa; }
-    .tag {
-      display: inline-block;
-      padding: 4px 10px;
-      border: 1px solid #24262b;
-      border-radius: 999px;
-      font-size: 12px;
-      background: #0b0c10;
-      color: #cfd2d6;
-      margin-right: 6px;
-      margin-top: 6px;
-    }
-    .grid {
-      display: grid;
-      gap: 16px;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 14px;
-      border-radius: 12px;
-      border: 1px solid #24262b;
-      background: #0b0c10;
-      margin: 6px 6px 0 0;
-    }
-    code {
-      background: #0b0c10;
-      border: 1px solid #24262b;
-      border-radius: 8px;
-      padding: 2px 6px;
-    }
+    .meta { font-size: 13px; color:#9aa2aa; }
+    .tag { display:inline-block; padding:4px 10px; border:1px solid #24262b; border-radius: 999px; font-size:12px; background:#0b0c10; color:#cfd2d6; margin-right:6px; margin-top:6px; }
+    .btn { display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid #24262b; background:#0b0c10; margin: 6px 6px 0 0; }
+    code { background:#0b0c10; border:1px solid #24262b; border-radius:8px; padding:2px 6px; }
+    .grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .rule { border-left: 4px solid #d6b8ff; padding-left: 12px; }
   </style>
+
+  <!-- Minimal structured data (SEO / machine-readable) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "GitJoker",
+    "description": "Framework operativo per programmatori: si opera su Git solo con IPR attivo, assieme a AIJOKER-C2. UE / Horizon-compatible.",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Web",
+    "url": "https://manuelcoletta1-source.github.io/gitjoker-c2/",
+    "author": { "@type": "Organization", "name": "HERMETICUM B.C.E. S.r.l." }
+  }
+  </script>
 </head>
 
 <body>
@@ -77,27 +47,19 @@
 <header>
   <div class="card">
     <h1>GitJoker</h1>
-    <p class="meta">
-      AIJOKER-C2 · Decision Accountability · Cybersecurity · UE
-    </p>
+    <p class="meta">Framework per Programmatori (UE) · Operare su Git assieme a <strong>AIJOKER-C2</strong></p>
 
-    <p>
-      <strong>GitJoker</strong> è un <strong>Decision Gate Validator (C2)</strong> progettato per
-      impedire l’esecuzione di decisioni critiche e automazioni ad alto rischio
-      quando mancano attribuzione umana verificabile, verifica ex-ante o prova opponibile.
-    </p>
-
-    <p>
-      GitJoker <strong>non decide</strong>.  
-      <strong>Blocca ciò che non è verificabile.</strong>
-    </p>
+    <div class="rule">
+      <p><strong>Regola fondamentale:</strong> si opera con GitJoker <strong>solo con IPR attivo</strong>, assieme a <strong>AIJOKER-C2</strong>.</p>
+      <p class="meta">Fail-closed by design: senza IPR, GitJoker non abilita operazioni.</p>
+    </div>
 
     <div>
-      <span class="tag">FAIL-CLOSED</span>
-      <span class="tag">AI Act Ready</span>
-      <span class="tag">NIS2 / CER</span>
-      <span class="tag">Horizon Europe</span>
-      <span class="tag">Audit-Ready</span>
+      <span class="tag">IPR-required</span>
+      <span class="tag">AIJOKER-C2</span>
+      <span class="tag">UE / Horizon</span>
+      <span class="tag">Audit-ready</span>
+      <span class="tag">Cybersecurity</span>
     </div>
 
     <div>
@@ -112,74 +74,86 @@
 <main>
 
   <section class="card">
-    <h2>Identità del Sistema</h2>
-    <ul>
-      <li><strong>Nome IPR:</strong> GitJoker</li>
-      <li><strong>Nodo operativo canonico:</strong> <code>AIJOKER-C2</code></li>
-      <li><strong>Alias tecnico / endpoint:</strong> <code>GITJOKER-C2</code></li>
-      <li><strong>Categoria:</strong> Operational Digital Identity · C2</li>
-      <li><strong>Registrazione UE:</strong> IPR-5 — GitJoker (AIJOKER-C2)</li>
-    </ul>
+    <h2>Cos’è (per chi programma)</h2>
+    <p>
+      <strong>GitJoker</strong> è un framework operativo che trasforma Git in un <strong>ambiente di lavoro reale</strong>:
+      struttura di progetto, continuità nel tempo, responsabilità umana verificabile, documentazione e manifest.
+    </p>
+    <p>
+      <strong>AIJOKER-C2</strong> è il nodo operativo che assiste il programmatore nel perimetro del proprio IPR:
+      genera, verifica, mantiene coerenza e supporta l’operatività.
+    </p>
   </section>
 
   <section class="card">
-    <h2>Cosa fa</h2>
+    <h2>Perché serve l’IPR</h2>
     <ul>
-      <li>verifica attribuzione umana reale prima dell’esecuzione</li>
-      <li>valida integrità, tempo e policy ex-ante</li>
-      <li>applica modalità <strong>FAIL-CLOSED</strong> in caso di mancanza requisiti</li>
-      <li>genera evidenze auditabili e verificabili offline</li>
-      <li>mantiene continuità tramite versionamento pubblico</li>
+      <li>identifica <strong>chi programma</strong> (responsabilità umana)</li>
+      <li>collega codice e progetto a una <strong>titolarità verificabile</strong></li>
+      <li>abilita AIJOKER-C2 in modo <strong>opponibile</strong></li>
+      <li>garantisce <strong>continuità storica</strong> del lavoro</li>
     </ul>
+    <p class="meta">Catena minima: <code>IPR → GitJoker → AIJOKER-C2</code></p>
   </section>
 
   <section class="card">
-    <h2>Dove si applica</h2>
+    <h2>Cosa puoi fare</h2>
     <div class="grid">
-      <div>
-        <h3>Cybersecurity & C2</h3>
+      <div class="card" style="margin:0;">
+        <h2 style="margin-top:0;">1) Programmare con AI</h2>
         <ul>
-          <li>command & control</li>
-          <li>incident prevention</li>
-          <li>cyber-defence</li>
+          <li>assistenza operativa con AIJOKER-C2</li>
+          <li>codice + documentazione + manifest</li>
+          <li>controllo umano e tracciabilità</li>
         </ul>
       </div>
-      <div>
-        <h3>AI ad Alto Rischio</h3>
+      <div class="card" style="margin:0;">
+        <h2 style="margin-top:0;">2) Creare un prodotto IPR</h2>
         <ul>
-          <li>AI Act UE</li>
-          <li>human-in-the-loop reale</li>
-          <li>risk mitigation ex-ante</li>
+          <li>il repository diventa <strong>prodotto</strong></li>
+          <li>commit come traccia operativa</li>
+          <li>prove verificabili nel tempo</li>
         </ul>
       </div>
-      <div>
-        <h3>Infrastrutture Critiche</h3>
+      <div class="card" style="margin:0;">
+        <h2 style="margin-top:0;">3) Progetti Horizon UE</h2>
         <ul>
-          <li>energia, trasporti, TLC</li>
-          <li>sanità critica</li>
-          <li>OT / ICS</li>
+          <li>struttura UE/Horizon-compatible</li>
+          <li>governance, maturità, continuità</li>
+          <li>cybersecurity e AI safety by design</li>
         </ul>
       </div>
     </div>
   </section>
 
   <section class="card">
-    <h2>Allineamento UE</h2>
+    <h2>Cosa non è consentito</h2>
     <ul>
-      <li><strong>AI Act:</strong> attribuzione, logging, controllo umano</li>
-      <li><strong>NIS2 / CER:</strong> prevenzione incidenti e accountability</li>
-      <li><strong>eIDAS / ETSI:</strong> integrità e prova opponibile</li>
-      <li><strong>Horizon Europe:</strong> ricerca applicata, TRL progressivo</li>
+      <li>programmazione anonima</li>
+      <li>uso di AI senza titolare IPR</li>
+      <li>progetti senza responsabilità e continuità</li>
+    </ul>
+    <p class="meta">Fail-closed by design: se manca l’IPR, GitJoker blocca.</p>
+  </section>
+
+  <section class="card">
+    <h2>Riferimenti</h2>
+    <ul>
+      <li><strong>Registro UE IPR:</strong> <a href="https://manuelcoletta1-source.github.io/ue-ipr-registry/">manuelcoletta1-source.github.io/ue-ipr-registry/</a></li>
+      <li><strong>Repo GitJoker-C2:</strong> <a href="https://github.com/manuelcoletta1-source/gitjoker-c2">github.com/manuelcoletta1-source/gitjoker-c2</a></li>
+      <li><strong>Manifest nodo:</strong> <a href="./manifest.json">manifest.json</a></li>
     </ul>
   </section>
 
 </main>
 
 <footer>
-  <p class="meta">
-    GitJoker · AIJOKER-C2 · Hermeticum B.C.E. · Unione Europea<br/>
-    Decision accountability before execution.
-  </p>
+  <div class="card">
+    <p class="meta">
+      © 2026 — HERMETICUM B.C.E. S.r.l. — Manuel Coletta<br/>
+      GitJoker · AIJOKER-C2 — <em>Programmare è un atto responsabile.</em>
+    </p>
+  </div>
 </footer>
 
 </body>
