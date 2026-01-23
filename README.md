@@ -1,123 +1,108 @@
-# GitJoker-C2
-## Identity Primary Record — Reference Implementation
+# GitJoker-C2 (AI JOKER)
+## Orchestrazione C2 dell’ecosistema Hermeticum B.C.E.
 
-**GitJoker-C2** è l’ambiente operativo di riferimento per l’emissione,
-la gestione e la verifica degli **Identity Primary Record (IPR)**.
+**GitJoker-C2**, alias **AI JOKER**, è lo **strato di orchestrazione C2**
+dello stack software **Hermeticum B.C.E.**.
 
-Il progetto fornisce una **implementazione tecnica di riferimento**
-per sistemi di identità digitale avanzata, tracciabilità decisionale
-e responsabilità operativa, con posizionamento **UE-oriented** e
-compatibilità con programmi di ricerca e cybersicurezza europei.
+Non è un semplice assistente conversazionale.
+Non è un sistema generico di IA.
+È un **orchestratore operativo verificabile**, progettato per:
+- coordinare i moduli IPR sotto policy esplicite,
+- applicare comportamenti **fail-closed**,
+- garantire **audit-by-design**,
+- mantenere *storico opponibile* delle operazioni.
 
----
-
-## Natura del Progetto
-
-- **Tipologia:** Ambiente operativo / Toolchain (C2)
-- **Ruolo:** Reference implementation IPR
-- **Ambito:** Identità digitale · Cybersicurezza · Governance
-- **Tecnologia:** Git · Web · Manifest JSON · Hash · Timestamp
-- **Stato:** ATTIVO / SPERIMENTALE
-- **Orientamento:** Unione Europea
-
-GitJoker-C2 **non è un prodotto commerciale** e **non è un documento di identità civile**.
-È un **sistema tecnico** progettato per supportare la definizione di uno
-**standard europeo di responsabilità digitale**.
+AI JOKER non “decide” per sé.
+**Rende verificabile ogni decisione operativa** che passa attraverso la catena IPR.
 
 ---
 
-## Identity Primary Record (IPR)
+## Obiettivo
 
-Un **Identity Primary Record (IPR)** è un record digitale primario che:
+GitJoker-C2 serve a:
 
-- ancora temporalmente l’esistenza di un soggetto o sistema
-- stabilisce una titolarità originaria verificabile
-- garantisce continuità identitaria nel tempo
-- rende opponibili decisioni, deleghe e azioni
-- separa persona, sistema, AI e responsabilità
+- coordinare i moduli dell’ecosistema (IPR-CORE, GATE, COMPLY, TRACE, EXCHANGE)
+- applicare vincoli UNEBDO tramite OPC prima dell’esecuzione
+- garantire che ogni workflow generi evidenza opponibile
+- bloccare ogni azione in caso di incertezza (fail-closed)
+- mantenere una storia evolutiva collegata a IPR
 
-L’IPR opera **a monte** di:
-- certificati
-- firme
-- credenziali
-- registrazioni settoriali
+Senza GitJoker-C2, lo stack resta **un insieme di moduli isolati**.
+Con GitJoker-C2, lo stack diventa un **sistema operativo coerente e verificabile**.
 
 ---
 
-## Ruolo di GitJoker-C2
+## Cosa fa / Cosa non fa
 
-GitJoker-C2 funge da:
+**Fa**
+- orchestration command & control dei moduli
+- verifica pre-condizioni di policy e IPR
+- produce tracce opponibili (log + evidenze)
+- applica comportamenti fail-closed
+- integra livelli di conformità
 
-- **ambiente di emissione** degli IPR
-- **strumento di gestione** della continuità identitaria
-- **interfaccia operativa** per progetti UE / Horizon
-- **reference implementation** per sperimentazione e audit
-
-In particolare, GitJoker consente di:
-- creare e versionare IPR personali e di sistema
-- collegare AI a identità responsabili
-- tracciare decisioni e deleghe operative
-- produrre evidenza tecnica opponibile
-
----
-
-## Integrazione nell’Ecosistema
-
-GitJoker-C2 opera in sinergia con:
-
-- **UE IPR Registry** — registro pubblico sperimentale
-- **IPR-3** — record primario di identità personale
-- **IPR-5** — record primario di identità di sistema
-- **OPC (Opponible Policy Core)** — governance e policy opponibili
-- **Corpus Esoterologia Ermetica** — fondazione teorica e disciplinare
+**Non fa**
+- sostituisce UNEBDO (enforcement root)
+- sostituisce la Lex Hermeticum (normativa)
+- prende decisioni politiche o arbitrarie
+- opera senza IPR valido e verificabile
 
 ---
 
-## Posizionamento UE
+## Dipendenze operative
 
-Il progetto è concepito come:
+GitJoker-C2 opera solo se:
 
-- **standard tecnico sperimentale**
-- **layer di cybersicurezza**
-- **strumento di responsabilità digitale**
-- **supporto a identità e AI accountability**
+- **UNEBDO** è applicabile (Layer 0 di opponibilità)
+- **IPR** (Identity Primary Record) è valido
+- **Policy** (OPC) sono definite e versionate
+- **GATE** ha consentito l’azione (ex-ante)
+- **COMPLY** ha confermato i livelli di conformità minimi
 
-GitJoker-C2 è progettato per essere:
-- interoperabile
-- auditabile
-- anti-retroattivo
-- compatibile con eIDAS come strato complementare
+In caso di dubbio: **blocca prima di eseguire**.
 
 ---
 
-## Utilizzo Previsto
-
-- Ricerca e innovazione (Horizon Europe)
-- Progetti pilota di cybersicurezza
-- Identità digitale avanzata
-- Governance computabile
-- Sistemi AI responsabili
+## Posizione nello stack Hermeticum B.C.E.
+OPC (Policy Core) ↓ UNEBDO (Layer 0 — Enforcement) ↓ IPR ↓ IPR-CORE · IPR-VAULT · IPR-TRACE · IPR-GATE · IPR-COMPLY · IPR-EXCHANGE ↓ GitJoker-C2 (Orchestrazione C2)
+GitJoker-C2 è l’**ultimo anello operativo** che rende lo stack **un sistema unico**.
 
 ---
 
-## Avvertenze
+## Paradigma operativo
 
-Questo repository:
-- **non rilascia certificazioni**
-- **non sostituisce registri ufficiali**
-- **non produce identità legali**
+- **Fail-closed by default**
+- **Audit-by-design**
+- **Verificabilità prima dell’operazione**
+- **Continuità evolutiva legata a IPR**
+- **Neutralità tecnologica**
 
-Costituisce **evidenza tecnica documentale**
-utilizzabile come supporto cronologico e identitario.
-
----
-
-## Autore e Promotore
-
-**Manuel Coletta**  
-Fondatore — HERMETICUM B.C.E.  
-Giurisdizione di riferimento: **Unione Europea**
+Se un requisito non è verificabile,
+**non si esegue nulla**.
 
 ---
 
-© 2026 — GitJoker-C2 · Identity Primary Record · Reference Implementation
+## Destinatari
+
+- architetti di sistemi ad alto rischio
+- sviluppatori di orchestrazione verificabile
+- contesti istituzionali UE
+- enti di audit e compliance tecnica
+
+---
+
+## Autore
+
+**Manuel Coletta**
+
+---
+
+## Sigillo editoriale
+
+**Esoterologia Edizioni**
+
+---
+
+## Stato
+
+🟢 **ATTIVO — Orchestrazione C2 verificabile**
