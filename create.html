@@ -1,276 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <title>GitJoker-C2 — Activation | Hermeticum B.C.E.</title>
+  <title>HERMETICUM B.C.E. — Attivazione | Level 1 (BASE)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Activation flow for GitJoker-C2: choose IPR scope, select access level, and follow fail-closed onboarding for governance and evidence." />
+  <meta name="description" content="Attivazione BioCyber Identity Card: procedura fail-closed per generare IPR/HRR e Evidence Bundle verificabile. Nessuna pubblicazione dati personali di default." />
   <style>
-    :root{
-      --bg:#0b0c10;
-      --panel:#0f1117;
-      --line:#24262b;
-      --text:#e8e8e8;
-      --muted:#a9adb7;
-      --accent:#9be7ff;
-      --good:#6ee7b7;
-      --warn:#fbbf24;
-      --bad:#fb7185;
-      color-scheme: dark;
-    }
-    *{ box-sizing:border-box; }
-    body{
-      margin:0;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.6;
-    }
-    header, main, footer{
-      max-width:980px;
-      margin:0 auto;
-      padding:24px 20px;
-    }
-    header{ border-bottom:1px solid var(--line); }
-    footer{
-      border-top:1px solid var(--line);
-      margin-top:60px;
-      font-size:0.9rem;
-      color:var(--muted);
-    }
-    a{ color:var(--accent); text-decoration:none; }
-    a:hover{ text-decoration:underline; }
-
-    h1{ margin:0 0 10px; font-size:1.9rem; }
-    h2{ margin-top:34px; font-size:1.25rem; }
-    h3{ margin:0 0 8px; font-size:1.05rem; }
-    p{ max-width:860px; }
-
-    .nav{
-      display:flex;
-      gap:14px;
-      flex-wrap:wrap;
-      margin-top:12px;
-      font-size:0.95rem;
-    }
-
-    .card{
-      background:var(--panel);
-      border:1px solid var(--line);
-      border-radius:14px;
-      padding:18px;
-      margin-top:16px;
-    }
-
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(12,1fr);
-      gap:14px;
-      margin-top:16px;
-    }
-    .col6{ grid-column:span 12; }
-    .col12{ grid-column:span 12; }
-    @media(min-width:900px){
-      .col6{ grid-column:span 6; }
-    }
-
-    ul{ padding-left:18px; margin:10px 0 0; }
-    li{ margin:6px 0; }
-
-    .mono{
-      font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-      background:#0b0c10;
-      border:1px solid var(--line);
-      border-radius:12px;
-      padding:14px;
-      overflow-x:auto;
-      white-space:nowrap;
-      margin-top:10px;
-    }
-
-    .note{
-      border-left:3px solid var(--accent);
-      padding:10px 12px;
-      background:rgba(155,231,255,0.08);
-      border-radius:10px;
-      margin-top:12px;
-    }
-    .warn{
-      border-left-color:var(--warn);
-      background:rgba(251,191,36,0.10);
-    }
-    .bad{
-      border-left-color:var(--bad);
-      background:rgba(251,113,133,0.10);
-    }
-
-    .btnrow{ display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
-    .btn{
-      display:inline-block;
-      padding:9px 12px;
-      border-radius:12px;
-      border:1px solid var(--line);
-      background:#0b0c10;
-      color:var(--text);
-      font-size:0.95rem;
-    }
-    .btn.primary{
-      background:rgba(155,231,255,0.14);
-      border-color:rgba(155,231,255,0.35);
-    }
+    :root{--bg:#0b0c10;--panel:#0f1117;--line:#24262b;--text:#e8e8e8;--muted:#a9adb7;--accent:#9be7ff;--warn:#fbbf24;--bad:#fb7185;color-scheme:dark;}
+    *{box-sizing:border-box;}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+    header,main,footer{max-width:1080px;margin:0 auto;padding:24px 20px;}
+    header{border-bottom:1px solid var(--line);}
+    footer{border-top:1px solid var(--line);margin-top:60px;font-size:.92rem;color:var(--muted);}
+    a{color:var(--accent);text-decoration:none;}a:hover{text-decoration:underline;}
+    h1{margin:0 0 8px;font-size:1.95rem;}h2{margin-top:34px;font-size:1.25rem;}h3{margin:0 0 8px;font-size:1.05rem;}
+    .nav{display:flex;gap:14px;flex-wrap:wrap;margin-top:12px;font-size:.95rem;}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;margin-top:16px;}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#0b0c10;border:1px solid var(--line);border-radius:12px;padding:14px;overflow-x:auto;white-space:nowrap;margin-top:10px;}
+    .note{border-left:3px solid var(--accent);padding:10px 12px;background:rgba(155,231,255,.08);border-radius:10px;margin-top:12px;}
+    .warn{border-left-color:var(--warn);background:rgba(251,191,36,.10);}
+    .bad{border-left-color:var(--bad);background:rgba(251,113,133,.10);}
+    ul{padding-left:18px;margin:10px 0 0;}li{margin:6px 0;}
+    .btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px;}
+    .btn{display:inline-block;padding:9px 12px;border-radius:12px;border:1px solid var(--line);background:#0b0c10;color:var(--text);font-size:.95rem;}
+    .btn.primary{background:rgba(155,231,255,.14);border-color:rgba(155,231,255,.35);}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:16px;}
+    .col6{grid-column:span 12;}@media(min-width:980px){.col6{grid-column:span 6;}}
   </style>
 </head>
-
 <body>
 <header>
-  <h1>Activation</h1>
-  <p class="muted">
-    GitJoker-C2 onboarding for fail-closed governance and evidence.<br/>
-    Human responsibility remains central: AI can assist, humans decide.
-  </p>
+  <h1>Attivazione — Level 1 (BASE)</h1>
+  <p class="muted">Procedura standard per attivare IPR/HRR e generare un Evidence Bundle verificabile. Default: pubblicazione hash-only (nessun dato personale).</p>
 
   <nav class="nav">
-    <a href="./index.html">Overview</a>
-    <a href="./services.html">Services</a>
-    <a href="./catalog.html">Catalog</a>
-    <a href="./create.html"><strong>Activation</strong></a>
+    <a href="./index.html">Home</a>
+    <a href="./services.html">Servizi</a>
+    <a href="./catalog.html">Catalogo</a>
+    <a href="./create.html"><strong>Attivazione</strong></a>
+    <a href="./verify.html">Verifica</a>
+    <a href="./governance.html">Governance</a>
+    <a href="./use-cases.html">Use Cases</a>
+    <a href="./evidence.html">Evidence</a>
     <a href="./README.md">README</a>
   </nav>
 </header>
 
 <main>
+  <section class="card">
+    <h2>Pre-flight (fail-closed)</h2>
+    <ul>
+      <li>capisci che HERMETICUM B.C.E. non è un documento civile</li>
+      <li>accetti che senza evidenze minime l’azione è <strong>FAIL_CLOSED</strong></li>
+      <li>accetti non-cancellabilità operativa delle prove generate (opponibilità)</li>
+    </ul>
+    <div class="note warn"><strong>Regola:</strong> se manca un requisito essenziale → il processo si ferma.</div>
+  </section>
+
+  <section>
+    <h2>1) Input utente (minimo)</h2>
+    <div class="grid">
+      <div class="card col6">
+        <h3>Dati minimi</h3>
+        <ul>
+          <li>nome e cognome</li>
+          <li>data di nascita</li>
+          <li>paese/nazionalità</li>
+          <li>contatto email per consegna bundle</li>
+        </ul>
+      </div>
+      <div class="card col6">
+        <h3>Documento (solo verifica interna)</h3>
+        <ul>
+          <li>CIE o passaporto valido</li>
+          <li>controlli anti-frode (KYC leggero)</li>
+          <li>nessuna pubblicazione dati personali di default</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note">Opzionale: public key dell’utente, documenti extra da includere nel bundle privato.</div>
+  </section>
+
+  <section>
+    <h2>2) Generazione (cosa fa il sistema)</h2>
+    <div class="mono">Utente → Verifica → IPR/HRR → manifest.json → SHA-512 → timeRef → Evidence Bundle</div>
+    <ul>
+      <li>generazione identificatore IPR-ID / HRR univoco</li>
+      <li>creazione manifest machine-readable</li>
+      <li>hash SHA-512 di manifest e allegati</li>
+      <li>riferimento temporale verificabile</li>
+      <li>produzione Evidence Bundle</li>
+    </ul>
+    <div class="note warn"><strong>Fail-closed:</strong> se una fase non produce evidenza verificabile → stop.</div>
+  </section>
 
   <section class="card">
-    <h2>Pre-flight check (mandatory)</h2>
-    <p>
-      Activation is <strong>fail-closed</strong>. If required evidence is missing or unverifiable,
-      the process must stop.
-    </p>
+    <h2>3) Output (cosa riceve l’utente)</h2>
     <ul>
-      <li>you understand GitJoker-C2 is <strong>non-offensive</strong> governance infrastructure</li>
-      <li>you accept that <strong>execution without validation is not allowed</strong></li>
-      <li>you are activating an IPR scope: personal, organizational, or institutional</li>
+      <li>IPR-ID / HRR</li>
+      <li>Evidence Bundle (privato): manifest + hash + ricevute</li>
+      <li>Public Proof (hash-only): hash manifest + timeRef + istruzioni verifica</li>
     </ul>
-    <div class="note warn">
-      <strong>Fail-closed rule:</strong> uncertainty is treated as risk → <strong>FAIL_CLOSED</strong>.
-    </div>
-  </section>
-
-  <section>
-    <h2>Step 1 — Choose IPR scope</h2>
-    <div class="grid">
-
-      <div class="card col6">
-        <h3>IPR-PERSONAL</h3>
-        <p class="muted">
-          For individuals and professionals who must make accountable digital decisions.
-        </p>
-        <ul>
-          <li>human root attribution (IPR/HRR)</li>
-          <li>standard DGV outcomes</li>
-          <li>evidence bundle for verification</li>
-        </ul>
-      </div>
-
-      <div class="card col6">
-        <h3>IPR-ORGANIZATIONAL</h3>
-        <p class="muted">
-          For organizations that require governance across people, roles and processes.
-        </p>
-        <ul>
-          <li>role/scope governance</li>
-          <li>policy-based DGV</li>
-          <li>audit-ready evidence workflows</li>
-        </ul>
-      </div>
-
-      <div class="card col12">
-        <h3>IPR-INSTITUTIONAL</h3>
-        <p class="muted">
-          For public institutions and high-criticality workflows requiring long-term verification.
-        </p>
-        <ul>
-          <li>strict fail-closed governance</li>
-          <li>high-assurance evidence chain</li>
-          <li>optional cryptographic anchoring (policy-driven)</li>
-        </ul>
-      </div>
-
-    </div>
-    <div class="note">
-      The IPR defines legitimacy and responsibility. GitJoker-C2 enforces governance before execution.
-    </div>
-  </section>
-
-  <section>
-    <h2>Step 2 — Select access level</h2>
-    <div class="grid">
-      <div class="card col6">
-        <h3>BASE</h3>
-        <ul>
-          <li>minimal chain enabled</li>
-          <li>standard validation</li>
-          <li>evidence bundle generation</li>
-        </ul>
-      </div>
-      <div class="card col6">
-        <h3>OPPONIBLE / STRONG</h3>
-        <ul>
-          <li>advanced DGV policies</li>
-          <li>audit-ready evidence workflows</li>
-          <li>high-criticality options (anchors, LTA readiness)</li>
-        </ul>
-      </div>
-    </div>
-    <div class="mono">Outcomes: ALLOW · REVIEW · DENY · FAIL_CLOSED</div>
-  </section>
-
-  <section>
-    <h2>Step 3 — Activation outputs</h2>
-    <div class="card">
-      <p>
-        After activation, GitJoker-C2 can produce structured, verifiable outputs for governed actions:
-      </p>
-      <ul>
-        <li>IPR/HRR status and scope proof</li>
-        <li>DGV decision outcome and policy reference</li>
-        <li>certified time linkage</li>
-        <li>evidence bundle (recompute and match)</li>
-        <li>optional critical anchors (when required)</li>
-      </ul>
-      <div class="note">
-        Golden rule: verification is <strong>recompute and match</strong>, not “trust the website”.
-      </div>
-      <div class="btnrow">
-        <a class="btn primary" href="./verify.html">Go to Verify</a>
-        <a class="btn" href="./services.html">Review Services</a>
-      </div>
+    <div class="btnrow">
+      <a class="btn primary" href="./verify.html">Vai a Verifica</a>
+      <a class="btn" href="./catalog.html">Upgrade livelli</a>
     </div>
   </section>
 
   <section class="card">
-    <h2>Institutional & enterprise onboarding</h2>
-    <p class="muted">
-      For pilots, audits, or partnerships, activation requires an explicit governance scope and risk profile.
-    </p>
-    <ul>
-      <li>define use-case and criticality</li>
-      <li>define policy set for DGV</li>
-      <li>define evidence retention and verification requirements</li>
-      <li>enable optional anchors only when required</li>
-    </ul>
-    <div class="note bad">
-      Execution without a defined, verifiable policy set is <strong>non-conformant</strong>.
+    <h2>Upgrade</h2>
+    <p class="muted">Level 2 (Opponibile) e Level 3 (Forte) aggiungono ancoraggi selettivi e robustezza nel tempo, senza perdere lo storico.</p>
+    <div class="btnrow">
+      <a class="btn" href="./catalog.html">Vedi Catalogo</a>
+      <a class="btn" href="./evidence.html">Struttura Evidence</a>
     </div>
+    <div class="note">Gli ancoraggi (IPFS/BTC/ETH) sono opzionali e policy-driven: non pubblicano identità, solo hash/riferimenti.</div>
   </section>
-
 </main>
 
 <footer>
-  <p>
-    GitJoker-C2 — Activation<br/>
-    Non-offensive governance infrastructure · Hermeticum B.C.E.
-  </p>
+  <p>HERMETICUM B.C.E. — Attivazione · Level 1 (BASE) · UE-first · fail-closed</p>
 </footer>
 </body>
 </html>
