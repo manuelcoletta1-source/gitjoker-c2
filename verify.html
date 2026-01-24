@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GitJoker-C2 — Verify | Hermeticum B.C.E.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Public verification workflow for GitJoker-C2: recompute and match evidence, validate IPR/HRR, DGV outcome and time linkage. Fail-closed by design." />
+  <style>
+    :root{
+      --bg:#0b0c10;
+      --panel:#0f1117;
+      --line:#24262b;
+      --text:#e8e8e8;
+      --muted:#a9adb7;
+      --accent:#9be7ff;
+      --good:#6ee7b7;
+      --warn:#fbbf24;
+      --bad:#fb7185;
+      color-scheme: dark;
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    header, main, footer{
+      max-width:980px;
+      margin:0 auto;
+      padding:24px 20px;
+    }
+    header{ border-bottom:1px solid var(--line); }
+    footer{
+      border-top:1px solid var(--line);
+      margin-top:60px;
+      font-size:0.9rem;
+      color:var(--muted);
+    }
+    a{ color:var(--accent); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    h1{ margin:0 0 10px; font-size:1.9rem; }
+    h2{ margin-top:34px; font-size:1.25rem; }
+    h3{ margin:0 0 8px; font-size:1.05rem; }
+    p{ max-width:860px; }
+
+    .nav{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-top:12px;
+      font-size:0.95rem;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:6px 10px;
+      font-size:12px;
+      color:var(--muted);
+      background:rgba(255,255,255,0.02);
+      margin-top:10px;
+    }
+    .dot{
+      width:8px;height:8px;border-radius:999px;background:var(--good);
+      box-shadow:0 0 0 3px rgba(110,231,183,0.15);
+    }
+
+    .card{
+      background:var(--panel);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:18px;
+      margin-top:16px;
+    }
+
+    ul{ padding-left:18px; margin:10px 0 0; }
+    li{ margin:6px 0; }
+
+    .mono{
+      font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+      background:#0b0c10;
+      border:1px solid var(--line);
+      border-radius:12px;
+      padding:14px;
+      overflow-x:auto;
+      white-space:nowrap;
+      margin-top:10px;
+    }
+
+    .note{
+      border-left:3px solid var(--accent);
+      padding:10px 12px;
+      background:rgba(155,231,255,0.08);
+      border-radius:10px;
+      margin-top:12px;
+    }
+    .warn{
+      border-left-color:var(--warn);
+      background:rgba(251,191,36,0.10);
+    }
+    .bad{
+      border-left-color:var(--bad);
+      background:rgba(251,113,133,0.10);
+    }
+
+    .btnrow{ display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+    .btn{
+      display:inline-block;
+      padding:9px 12px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:#0b0c10;
+      color:var(--text);
+      font-size:0.95rem;
+    }
+    .btn.primary{
+      background:rgba(155,231,255,0.14);
+      border-color:rgba(155,231,255,0.35);
+    }
+
+    .step{
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:14px;
+      background:rgba(255,255,255,0.02);
+      margin-top:12px;
+    }
+    .step b{ display:block; margin-bottom:6px; }
+  </style>
+</head>
+
+<body>
+<header>
+  <h1>Verify</h1>
+  <p class="muted">
+    Public verification workflow for GitJoker-C2 evidence and accountability.<br/>
+    Golden rule: <strong>recompute and match</strong>, not “trust the website”.
+  </p>
+
+  <nav class="nav">
+    <a href="./index.html">Overview</a>
+    <a href="./services.html">Services</a>
+    <a href="./catalog.html">Catalog</a>
+    <a href="./create.html">Activation</a>
+    <a href="./verify.html"><strong>Verify</strong></a>
+    <a href="./README.md">README</a>
+  </nav>
+
+  <div class="badge"><span class="dot"></span> Recompute · Match · Fail-Closed</div>
+</header>
+
+<main>
+
+  <section class="card">
+    <h2>What can be verified</h2>
+    <ul>
+      <li><strong>IPR/HRR</strong>: existence and legitimacy of the human root</li>
+      <li><strong>DGV outcome</strong>: ALLOW / REVIEW / DENY / FAIL_CLOSED</li>
+      <li><strong>Time linkage</strong>: consistent temporal reference</li>
+      <li><strong>Evidence Bundle</strong>: hashes, signatures and metadata</li>
+      <li><strong>Optional anchors</strong>: external timestamping/anchoring when enabled</li>
+    </ul>
+    <div class="note warn">
+      <strong>Fail-closed rule:</strong> if a required element is missing or unverifiable, the result must be <strong>FAIL_CLOSED</strong>.
+    </div>
+  </section>
+
+  <section>
+    <h2>Verification workflow</h2>
+
+    <div class="step">
+      <b>Step 1 — Obtain the Evidence Bundle</b>
+      <p class="muted">
+        Collect the evidence bundle (hashes, signatures, time reference, metadata) from the governed action.
+        Verification starts from the bundle, not from a webpage claim.
+      </p>
+    </div>
+
+    <div class="step">
+      <b>Step 2 — Recompute hashes</b>
+      <p class="muted">
+        Recompute cryptographic hashes from the original payload/data and compare them to the bundle values.
+      </p>
+      <div class="mono">recompute(payload) → hash → compare → match / mismatch</div>
+      <div class="note bad">
+        <strong>Mismatch</strong> = integrity failure → <strong>FAIL_CLOSED</strong>.
+      </div>
+    </div>
+
+    <div class="step">
+      <b>Step 3 — Verify signatures and attribution</b>
+      <p class="muted">
+        Verify signatures and attribution claims: the bundle must be tied to a valid IPR/HRR identity root
+        and an authorized decision scope.
+      </p>
+      <div class="note warn">
+        Missing or invalid attribution → <strong>FAIL_CLOSED</strong>.
+      </div>
+    </div>
+
+    <div class="step">
+      <b>Step 4 — Validate DGV outcome</b>
+      <p class="muted">
+        Confirm the decision outcome recorded by DGV and its policy reference, if applicable.
+      </p>
+      <div class="mono">ALLOW · REVIEW · DENY · FAIL_CLOSED</div>
+    </div>
+
+    <div class="step">
+      <b>Step 5 — Validate time linkage</b>
+      <p class="muted">
+        Verify that the time reference is consistent, documented and matches the evidence bundle metadata.
+      </p>
+      <div class="note warn">
+        Unverifiable time source or inconsistent timestamps → <strong>FAIL_CLOSED</strong>.
+      </div>
+    </div>
+
+    <div class="step">
+      <b>Step 6 — Optional: verify external anchors</b>
+      <p class="muted">
+        If anchors are enabled, verify that the anchored hash matches the bundle hash.
+        Anchors are activated only for high-criticality cases.
+      </p>
+      <div class="note">
+        Anchors do not replace verification: they strengthen long-term opponibility.
+      </div>
+    </div>
+
+  </section>
+
+  <section class="card">
+    <h2>Public references</h2>
+    <p class="muted">
+      These links provide public context for verification and ecosystem alignment.
+    </p>
+    <div class="btnrow">
+      <a class="btn primary" href="https://manuelcoletta1-source.github.io/manuhell/" target="_blank" rel="noopener">Open IPR public verification</a>
+      <a class="btn" href="https://manuelcoletta1-source.github.io/hermeticum-bce-services/" target="_blank" rel="noopener">Hermeticum Services</a>
+      <a class="btn" href="https://manuelcoletta1-source.github.io/hermeticum-bce-technology/" target="_blank" rel="noopener">Technology</a>
+    </div>
+    <div class="note">
+      Verification is reproducible: any third party can recompute and match.
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    GitJoker-C2 — Verify<br/>
+    Public verification workflow · Hermeticum B.C.E.
+  </p>
+</footer>
+</body>
+</html>
