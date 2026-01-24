@@ -1,39 +1,139 @@
-<section>
-  <h2>Next steps</h2>
-  <p class="muted">
-    Choose the appropriate path based on your role and criticality level.
-    All paths enforce fail-closed governance and human responsibility.
-  </p>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>HERMETICUM B.C.E. — Catalogo | BioCyber Identity Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Catalogo BioCyber Identity Card: BASE, OPPONIBILE, FORTE. Servizio continuativo con catena fail-closed e evidence-first." />
+  <style>
+    :root{--bg:#0b0c10;--panel:#0f1117;--line:#24262b;--text:#e8e8e8;--muted:#a9adb7;--accent:#9be7ff;--good:#6ee7b7;--warn:#fbbf24;color-scheme:dark;}
+    *{box-sizing:border-box;}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+    header,main,footer{max-width:1080px;margin:0 auto;padding:24px 20px;}
+    header{border-bottom:1px solid var(--line);}
+    footer{border-top:1px solid var(--line);margin-top:60px;font-size:.92rem;color:var(--muted);}
+    a{color:var(--accent);text-decoration:none;}a:hover{text-decoration:underline;}
+    h1{margin:0 0 8px;font-size:1.95rem;}h2{margin-top:34px;font-size:1.25rem;}h3{margin:0 0 8px;font-size:1.05rem;}
+    .nav{display:flex;gap:14px;flex-wrap:wrap;margin-top:12px;font-size:.95rem;}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:16px;}
+    .col4{grid-column:span 12;}@media(min-width:980px){.col4{grid-column:span 4;}}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;margin-top:16px;}
+    .kicker{letter-spacing:.08em;text-transform:uppercase;font-size:.78rem;color:var(--muted);margin-bottom:6px;}
+    .price{font-size:1.15rem;font-weight:700;margin-top:6px;}
+    .muted{color:var(--muted);}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#0b0c10;border:1px solid var(--line);border-radius:12px;padding:14px;overflow-x:auto;white-space:nowrap;margin-top:10px;}
+    .note{border-left:3px solid var(--accent);padding:10px 12px;background:rgba(155,231,255,.08);border-radius:10px;margin-top:12px;}
+    .warn{border-left-color:var(--warn);background:rgba(251,191,36,.10);}
+    .btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px;}
+    .btn{display:inline-block;padding:9px 12px;border-radius:12px;border:1px solid var(--line);background:#0b0c10;color:var(--text);font-size:.95rem;}
+    .btn.primary{background:rgba(155,231,255,.14);border-color:rgba(155,231,255,.35);}
+    ul{padding-left:18px;margin:10px 0 0;}li{margin:6px 0;}
+  </style>
+</head>
+<body>
+<header>
+  <h1>Catalogo</h1>
+  <p class="muted">BioCyber Identity Card — servizio continuativo (abbonamento). Verifica sempre riproducibile: ricalcolo e confronto.</p>
 
-  <div class="btnrow">
-    <a class="btn primary" href="./create.html">Start Activation</a>
-    <a class="btn" href="./verify.html">Verify an IPR / Evidence</a>
-    <a class="btn" href="./services.html">Review Services</a>
-  </div>
+  <nav class="nav">
+    <a href="./index.html">Home</a>
+    <a href="./services.html">Servizi</a>
+    <a href="./catalog.html"><strong>Catalogo</strong></a>
+    <a href="./create.html">Attivazione</a>
+    <a href="./verify.html">Verifica</a>
+    <a href="./governance.html">Governance</a>
+    <a href="./use-cases.html">Use Cases</a>
+    <a href="./evidence.html">Evidence</a>
+    <a href="./README.md">README</a>
+  </nav>
+</header>
 
-  <div class="note">
-    <strong>Institutional & Enterprise path:</strong>
-    for audits, pilots or partnerships, follow the UE-first onboarding.
-  </div>
+<main>
+  <section class="card">
+    <h2>Regola invariabile</h2>
+    <div class="mono">Evento → IPR/HRR → DGV → Tempo certificato → Evidence Bundle</div>
+    <div class="note warn"><strong>Fail-closed:</strong> se non puoi verificare, non puoi eseguire.</div>
+  </section>
 
-  <div class="btnrow">
-    <a class="btn" href="https://manuelcoletta1-source.github.io/hermeticum-bce-services/">
-      Go to Hermeticum B.C.E.
-    </a>
-    <a class="btn" href="https://manuelcoletta1-source.github.io/hermeticum-bce-technology/">
-      Architecture & Technology
-    </a>
-  </div>
-</section>
-<div class="note">
-  <strong>Individuals & Professionals:</strong>
-  start with BASE to activate governance and evidence for your actions.
-</div>
-<div class="note">
-  <strong>Organizations:</strong>
-  choose OPPONIBLE to enable audit-ready governance and accountability.
-</div>
-<div class="note">
-  <strong>Public Institutions:</strong>
-  STRONG level enables high-criticality, long-term verification workflows.
-</div>
+  <section>
+    <h2>Livelli di servizio</h2>
+
+    <div class="grid">
+
+      <div class="card col4">
+        <div class="kicker">Livello 1</div>
+        <h3>BASE</h3>
+        <p class="muted">Ingresso nell’ecosistema: evidenza minima continua e governance fail-closed.</p>
+        <div class="price">€9 / mese · €90 / anno</div>
+        <ul>
+          <li>IPR/HRR attivo</li>
+          <li>manifest machine-readable</li>
+          <li>hash + timestamp</li>
+          <li>Evidence Bundle privato</li>
+          <li>DGV standard (ALLOW/REVIEW/DENY/FAIL_CLOSED)</li>
+        </ul>
+        <div class="btnrow">
+          <a class="btn primary" href="./create.html">Attiva BASE</a>
+          <a class="btn" href="./verify.html">Come verificare</a>
+        </div>
+      </div>
+
+      <div class="card col4">
+        <div class="kicker">Livello 2</div>
+        <h3>OPPONIBILE</h3>
+        <p class="muted">Verifica da terze parti senza fiducia: pubblicazione hash-only e ancoraggi selettivi.</p>
+        <div class="price">€29 / mese · €290 / anno</div>
+        <ul>
+          <li>tutto BASE</li>
+          <li>Evidence pubblicabile (hash-only)</li>
+          <li>IPFS (CID) per bundle pubblico</li>
+          <li>1 chain pubblica (BTC oppure ETH)</li>
+          <li>pronto per audit</li>
+        </ul>
+        <div class="btnrow">
+          <a class="btn primary" href="./create.html">Upgrade a OPPONIBILE</a>
+          <a class="btn" href="./evidence.html">Evidence</a>
+        </div>
+      </div>
+
+      <div class="card col4">
+        <div class="kicker">Livello 3</div>
+        <h3>FORTE / ISTITUZIONALE</h3>
+        <p class="muted">Massima opponibilità e robustezza nel tempo: multi-ancora e readiness di lungo periodo.</p>
+        <div class="price">€79 / mese · €790 / anno</div>
+        <ul>
+          <li>tutto OPPONIBILE</li>
+          <li>IPFS + Bitcoin + Ethereum (multi-ancora)</li>
+          <li>ridondanza temporale</li>
+          <li>bundle strutturato</li>
+          <li>policy per continuità e ri-verifica</li>
+        </ul>
+        <div class="btnrow">
+          <a class="btn primary" href="./create.html">Upgrade a FORTE</a>
+          <a class="btn" href="./governance.html">Governance</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="note">
+      Nessun lock-in: la verificabilità storica resta possibile tramite manifest e hash (anche a servizio terminato),
+      se le evidenze minime sono state prodotte correttamente.
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>CTA</h2>
+    <div class="btnrow">
+      <a class="btn primary" href="./create.html">Inizia Attivazione</a>
+      <a class="btn" href="./verify.html">Verifica pubblica</a>
+      <a class="btn" href="./services.html">Vedi servizi</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>HERMETICUM B.C.E. — Catalogo · UE-first · fail-closed · evidence-first</p>
+</footer>
+</body>
+</html>
