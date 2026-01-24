@@ -1,108 +1,140 @@
-# GitJoker-C2 (AI JOKER)
-## Orchestrazione C2 dell’ecosistema Hermeticum B.C.E.
+# GITJOKER-C2
+**Command · Control · Coordination (non-offensive)**
 
-**GitJoker-C2**, alias **AI JOKER**, è lo **strato di orchestrazione C2**
-dello stack software **Hermeticum B.C.E.**.
+> Governo operativo e validazione decisionale  
+> dell’ecosistema **HERMETICUM B.C.E.**
 
-Non è un semplice assistente conversazionale.
-Non è un sistema generico di IA.
-È un **orchestratore operativo verificabile**, progettato per:
-- coordinare i moduli IPR sotto policy esplicite,
-- applicare comportamenti **fail-closed**,
-- garantire **audit-by-design**,
-- mantenere *storico opponibile* delle operazioni.
-
-AI JOKER non “decide” per sé.
-**Rende verificabile ogni decisione operativa** che passa attraverso la catena IPR.
+**GitJoker-C2** è il livello di **governo operativo** dell’ecosistema **HERMETICUM B.C.E.**.  
+Trasforma decisioni umane in azioni digitali **verificabili, controllate e opponibili nel tempo**, applicando principi **fail-closed**, **UE-first** e **responsabilità umana non delegabile**.
 
 ---
 
-## Obiettivo
+## Cos’è GitJoker-C2
 
-GitJoker-C2 serve a:
+**GitJoker-C2** è un **metasistema software di orchestrazione e controllo** che opera **tra la decisione umana e l’esecuzione tecnica**.
 
-- coordinare i moduli dell’ecosistema (IPR-CORE, GATE, COMPLY, TRACE, EXCHANGE)
-- applicare vincoli UNEBDO tramite OPC prima dell’esecuzione
-- garantire che ogni workflow generi evidenza opponibile
-- bloccare ogni azione in caso di incertezza (fail-closed)
-- mantenere una storia evolutiva collegata a IPR
+Non è un’AI autonoma.  
+Non è un sistema offensivo.  
+Non prende decisioni al posto dell’essere umano.
 
-Senza GitJoker-C2, lo stack resta **un insieme di moduli isolati**.
-Con GitJoker-C2, lo stack diventa un **sistema operativo coerente e verificabile**.
+È il **punto in cui la governance diventa eseguibile**.
 
 ---
 
-## Cosa fa / Cosa non fa
+## Ruolo nell’ecosistema Hermeticum B.C.E.
 
-**Fa**
-- orchestration command & control dei moduli
-- verifica pre-condizioni di policy e IPR
-- produce tracce opponibili (log + evidenze)
-- applica comportamenti fail-closed
-- integra livelli di conformità
+GitJoker-C2 rende operativo il framework **Hermeticum B.C.E.** applicando la catena decisionale minima:
 
-**Non fa**
-- sostituisce UNEBDO (enforcement root)
-- sostituisce la Lex Hermeticum (normativa)
-- prende decisioni politiche o arbitrarie
-- opera senza IPR valido e verificabile
+**Evento → IPR/HRR → DGV → Tempo Certificato → Evidence Bundle**
+
+Se un prerequisito non è verificabile, l’azione **non procede**.
 
 ---
 
-## Dipendenze operative
+## Principi operativi
 
-GitJoker-C2 opera solo se:
+- **Fail-Closed by Design**  
+  Incertezza = rischio → blocco dell’esecuzione.
 
-- **UNEBDO** è applicabile (Layer 0 di opponibilità)
-- **IPR** (Identity Primary Record) è valido
-- **Policy** (OPC) sono definite e versionate
-- **GATE** ha consentito l’azione (ex-ante)
-- **COMPLY** ha confermato i livelli di conformità minimi
+- **Responsabilità umana centrale**  
+  Ogni azione è attribuita a un **soggetto tecnico e giuridico umano** tramite IPR/HRR.
 
-In caso di dubbio: **blocca prima di eseguire**.
+- **Separazione netta dei ruoli**  
+  L’AI può suggerire.  
+  Solo l’umano decide.  
+  GitJoker-C2 governa l’esecuzione.
 
----
+- **Audit-by-Design**  
+  Ogni decisione è ricostruibile, verificabile e opponibile nel tempo.
 
-## Posizione nello stack Hermeticum B.C.E.
-OPC (Policy Core) ↓ UNEBDO (Layer 0 — Enforcement) ↓ IPR ↓ IPR-CORE · IPR-VAULT · IPR-TRACE · IPR-GATE · IPR-COMPLY · IPR-EXCHANGE ↓ GitJoker-C2 (Orchestrazione C2)
-GitJoker-C2 è l’**ultimo anello operativo** che rende lo stack **un sistema unico**.
-
----
-
-## Paradigma operativo
-
-- **Fail-closed by default**
-- **Audit-by-design**
-- **Verificabilità prima dell’operazione**
-- **Continuità evolutiva legata a IPR**
-- **Neutralità tecnologica**
-
-Se un requisito non è verificabile,
-**non si esegue nulla**.
+- **UE-first Governance**  
+  Progettato in allineamento con eIDAS, AI Act, ETSI e principi europei di affidabilità digitale.
 
 ---
 
-## Destinatari
+## Componenti gestiti
 
-- architetti di sistemi ad alto rischio
-- sviluppatori di orchestrazione verificabile
-- contesti istituzionali UE
-- enti di audit e compliance tecnica
+### IPR / HRR — Identity Primary Record
+Radice umana verificabile.  
+L’essere umano opera come **soggetto tecnico e giuridico responsabile** dell’azione.
+
+### DGV — Decision Gate Validator
+Motore di validazione ex-ante con outcome standardizzati:
+`ALLOW · REVIEW · DENY · FAIL_CLOSED`.
+
+### Temporal Evidence Bundle
+Generazione di evidenze strutturate:
+- hash
+- firme
+- riferimento temporale certificato
+- metadati contestuali
+
+### Anchors (opzionali)
+Ancoraggi crittografici selettivi (es. IPFS, Bitcoin, Ethereum) per eventi ad alta criticità.
 
 ---
 
-## Autore
+## Modello “Git as Governance”
 
-**Manuel Coletta**
+GitJoker-C2 applica il modello **Git** alla governance:
+
+- ogni decisione è versionata
+- ogni cambiamento è attribuibile
+- ogni conflitto blocca l’azione
+- ogni stato è verificabile
+
+Se una decisione non può essere versionata, **non è una decisione sicura**.
 
 ---
 
-## Sigillo editoriale
+## Cosa GitJoker-C2 NON è
+- non è un’AI cosciente
+- non è un bot autonomo
+- non è un sistema di sorveglianza
+- non è un sistema offensivo
 
-**Esoterologia Edizioni**
+È **infrastruttura di governo tecnico**.
+
+---
+
+## Relazione con AIJoker
+
+- **AIJoker** → analisi, simulazione, supporto cognitivo  
+- **GitJoker-C2** → validazione, coordinamento, controllo operativo  
+
+L’AI assiste.  
+L’umano decide.  
+GitJoker-C2 fa rispettare la decisione.
+
+---
+
+## Struttura del repository
+
+- `index.html` → overview GitJoker-C2  
+- `services.html` → flussi C2 e modelli decisionali  
+- `schemas/` → modelli semantici e logici  
+- `assets/` → risorse statiche  
+
+Il repository può essere pubblicato tramite **GitHub Pages** come interfaccia di presentazione e controllo.
 
 ---
 
 ## Stato
 
-🟢 **ATTIVO — Orchestrazione C2 verificabile**
+🟢 **ATTIVO — Modulo C2 non offensivo**  
+Evoluzione controllata, semantica stabile, integrazione progressiva con l’ecosistema.
+
+---
+
+## Licenza
+
+Da definire.  
+(Consigliata separazione tra codice operativo, specifiche tecniche e documentazione.)
+
+---
+
+## Principio finale
+
+> **L’AI può suggerire.  
+Solo l’essere umano decide.  
+GitJoker-C2 rende la decisione opponibile.**
