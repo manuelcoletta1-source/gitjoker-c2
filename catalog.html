@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GitJoker-C2 — Catalog | Hermeticum B.C.E.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="GitJoker-C2 catalog: Base, Opponible and Strong levels for fail-closed governance, evidence and accountability." />
+  <style>
+    :root{
+      --bg:#0b0c10;
+      --panel:#0f1117;
+      --line:#24262b;
+      --text:#e8e8e8;
+      --muted:#a9adb7;
+      --accent:#9be7ff;
+      --good:#6ee7b7;
+      --warn:#fbbf24;
+      color-scheme: dark;
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    header, main, footer{
+      max-width:1100px;
+      margin:0 auto;
+      padding:24px 20px;
+    }
+    header{ border-bottom:1px solid var(--line); }
+    footer{
+      border-top:1px solid var(--line);
+      margin-top:60px;
+      font-size:0.9rem;
+      color:var(--muted);
+    }
+    a{ color:var(--accent); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    h1{ margin:0 0 10px; font-size:1.9rem; }
+    h2{ margin-top:34px; font-size:1.25rem; }
+    h3{ margin:0 0 8px; font-size:1.05rem; }
+    p{ max-width:900px; }
+
+    .nav{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-top:12px;
+      font-size:0.95rem;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:6px 10px;
+      font-size:12px;
+      color:var(--muted);
+      background:rgba(255,255,255,0.02);
+      margin-top:10px;
+    }
+    .dot{
+      width:8px;height:8px;border-radius:999px;background:var(--good);
+      box-shadow:0 0 0 3px rgba(110,231,183,0.15);
+    }
+
+    .mono{
+      font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+      background:#0b0c10;
+      border:1px solid var(--line);
+      border-radius:12px;
+      padding:14px;
+      overflow-x:auto;
+      white-space:nowrap;
+      margin-top:10px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:14px;
+      margin-top:16px;
+    }
+    .col4{ grid-column:span 12; }
+    .col6{ grid-column:span 12; }
+    .col12{ grid-column:span 12; }
+    @media(min-width:980px){
+      .col4{ grid-column:span 4; }
+      .col6{ grid-column:span 6; }
+    }
+
+    .card{
+      background:var(--panel);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:18px;
+      margin-top:16px;
+    }
+
+    ul{ padding-left:18px; margin:10px 0 0; }
+    li{ margin:6px 0; }
+
+    .note{
+      border-left:3px solid var(--accent);
+      padding:10px 12px;
+      background:rgba(155,231,255,0.08);
+      border-radius:10px;
+      margin-top:12px;
+    }
+    .warn{
+      border-left-color:var(--warn);
+      background:rgba(251,191,36,0.10);
+    }
+
+    .btnrow{ display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+    .btn{
+      display:inline-block;
+      padding:9px 12px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:#0b0c10;
+      color:var(--text);
+      font-size:0.95rem;
+    }
+    .btn.primary{
+      background:rgba(155,231,255,0.14);
+      border-color:rgba(155,231,255,0.35);
+    }
+
+    .price{
+      font-size:1.15rem;
+      font-weight:700;
+      margin-top:8px;
+    }
+    .muted{ color:var(--muted); }
+
+    .kicker{
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+      font-size:0.78rem;
+      color:var(--muted);
+      margin-bottom:6px;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <h1>GitJoker-C2 — Catalog</h1>
+  <p class="muted">
+    Access levels for fail-closed governance services within <strong>Hermeticum B.C.E.</strong>
+  </p>
+
+  <nav class="nav">
+    <a href="./index.html">Overview</a>
+    <a href="./services.html">Services</a>
+    <a href="./catalog.html"><strong>Catalog</strong></a>
+    <a href="./README.md">README</a>
+    <a href="https://manuelcoletta1-source.github.io/hermeticum-bce-services/">Hermeticum Services</a>
+  </nav>
+
+  <div class="badge"><span class="dot"></span> UE-first · Fail-Closed · Audit-by-design</div>
+</header>
+
+<main>
+
+  <section>
+    <h2>What you get</h2>
+    <p>
+      GitJoker-C2 provides operational governance: validation, coordination and authorization
+      before execution. All levels enforce the same minimal chain:
+    </p>
+    <div class="mono">Event → IPR/HRR → DGV → Certified Time → Evidence Bundle</div>
+    <div class="note warn">
+      Fail-closed rule: if a required element is missing or unverifiable, execution is blocked.
+    </div>
+  </section>
+
+  <section>
+    <h2>Access levels</h2>
+
+    <div class="grid">
+
+      <div class="card col4">
+        <div class="kicker">Level 01</div>
+        <h3>BASE</h3>
+        <p class="muted">
+          For individuals and small teams starting with governance and evidence.
+        </p>
+        <div class="price">Pricing: TBD</div>
+        <ul>
+          <li>IPR/HRR validation (basic)</li>
+          <li>DGV outcomes (standard)</li>
+          <li>certified time linkage</li>
+          <li>evidence bundle generation</li>
+        </ul>
+        <div class="note">
+          Best for: onboarding, low-medium criticality workflows.
+        </div>
+        <div class="btnrow">
+          <a class="btn primary" href="./services.html">See services</a>
+          <a class="btn" href="https://manuelcoletta1-source.github.io/hermeticum-bce-services/">Go to Hermeticum</a>
+        </div>
+      </div>
+
+      <div class="card col4">
+        <div class="kicker">Level 02</div>
+        <h3>OPPONIBLE</h3>
+        <p class="muted">
+          For organizations requiring audit-ready accountability and stronger validation.
+        </p>
+        <div class="price">Pricing: TBD</div>
+        <ul>
+          <li>extended IPR/HRR scope checks</li>
+          <li>policy-based DGV (advanced)</li>
+          <li>evidence bundles for audit workflows</li>
+          <li>governance reporting (baseline)</li>
+        </ul>
+        <div class="note">
+          Best for: regulated processes, compliance, formal accountability.
+        </div>
+        <div class="btnrow">
+          <a class="btn primary" href="./services.html">See services</a>
+          <a class="btn" href="https://manuelcoletta1-source.github.io/hermeticum-bce-technology/">Architecture</a>
+        </div>
+      </div>
+
+      <div class="card col4">
+        <div class="kicker">Level 03</div>
+        <h3>STRONG</h3>
+        <p class="muted">
+          For high-criticality environments and institutional workflows.
+        </p>
+        <div class="price">Pricing: TBD</div>
+        <ul>
+          <li>strict fail-closed enforcement</li>
+          <li>high-assurance evidence chain</li>
+          <li>optional cryptographic anchors (policy-driven)</li>
+          <li>long-term verification readiness</li>
+        </ul>
+        <div class="note">
+          Best for: public institutions, critical infrastructure, high-risk actions.
+        </div>
+        <div class="btnrow">
+          <a class="btn primary" href="./services.html">See services</a>
+          <a class="btn" href="https://manuelcoletta1-source.github.io/manuhell/">Public verification</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Who should use which level</h2>
+    <div class="grid">
+      <div class="card col6">
+        <h3>Individuals / Professionals</h3>
+        <ul>
+          <li>BASE for onboarding and controlled execution</li>
+          <li>OPPONIBLE when audit and formal responsibility are required</li>
+        </ul>
+      </div>
+      <div class="card col6">
+        <h3>Organizations / Institutions</h3>
+        <ul>
+          <li>OPPONIBLE for governance and compliance</li>
+          <li>STRONG for high-criticality actions and institutional workflows</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note">
+      Levels are additive: higher levels inherit the minimal chain and add stricter governance controls.
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    GitJoker-C2 — Catalog<br/>
+    Non-offensive governance infrastructure · Hermeticum B.C.E.
+  </p>
+</footer>
+</body>
+</html>
