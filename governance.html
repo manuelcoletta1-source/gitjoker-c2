@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>HERMETICUM B.C.E. — Governance & Scope</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Governance UE-first: scope, non-goals, fail-closed policy, responsabilità umana, privacy-by-design e verificabilità riproducibile." />
+  <style>
+    :root{--bg:#0b0c10;--panel:#0f1117;--line:#24262b;--text:#e8e8e8;--muted:#a9adb7;--accent:#9be7ff;--warn:#fbbf24;color-scheme:dark;}
+    *{box-sizing:border-box;}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+    header,main,footer{max-width:1080px;margin:0 auto;padding:24px 20px;}
+    header{border-bottom:1px solid var(--line);}
+    footer{border-top:1px solid var(--line);margin-top:60px;font-size:.92rem;color:var(--muted);}
+    a{color:var(--accent);text-decoration:none;}a:hover{text-decoration:underline;}
+    h1{margin:0 0 8px;font-size:1.95rem;}h2{margin-top:34px;font-size:1.25rem;}h3{margin:0 0 8px;font-size:1.05rem;}
+    .nav{display:flex;gap:14px;flex-wrap:wrap;margin-top:12px;font-size:.95rem;}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;margin-top:16px;}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#0b0c10;border:1px solid var(--line);border-radius:12px;padding:14px;overflow-x:auto;white-space:nowrap;margin-top:10px;}
+    .note{border-left:3px solid var(--accent);padding:10px 12px;background:rgba(155,231,255,.08);border-radius:10px;margin-top:12px;}
+    .warn{border-left-color:var(--warn);background:rgba(251,191,36,.10);}
+    ul{padding-left:18px;margin:10px 0 0;}li{margin:6px 0;}
+  </style>
+</head>
+<body>
+<header>
+  <h1>Governance & Scope</h1>
+  <p class="muted">UE-first: governance eseguibile, responsabilità umana opponibile, verificabilità riproducibile.</p>
+
+  <nav class="nav">
+    <a href="./index.html">Home</a>
+    <a href="./services.html">Servizi</a>
+    <a href="./catalog.html">Catalogo</a>
+    <a href="./create.html">Attivazione</a>
+    <a href="./verify.html">Verifica</a>
+    <a href="./governance.html"><strong>Governance</strong></a>
+    <a href="./use-cases.html">Use Cases</a>
+    <a href="./evidence.html">Evidence</a>
+    <a href="./README.md">README</a>
+  </nav>
+</header>
+
+<main>
+  <section class="card">
+    <h2>Principio centrale</h2>
+    <p class="muted">
+      L’essere umano è il <strong>soggetto tecnico e giuridico responsabile</strong> dell’azione.
+      Il sistema rende tale responsabilità verificabile, opponibile e auditabile.
+    </p>
+    <div class="mono">Decisione umana → Validazione (DGV) → Esecuzione → Evidenza</div>
+  </section>
+
+  <section>
+    <h2>Policy fail-closed</h2>
+    <div class="card">
+      <ul>
+        <li>assenza di evidenza minima → <strong>FAIL_CLOSED</strong></li>
+        <li>attribuzione IPR/HRR non verificabile → <strong>FAIL_CLOSED</strong></li>
+        <li>tempo non verificabile/incoerente → <strong>FAIL_CLOSED</strong></li>
+        <li>policy mancante/ambigua → <strong>FAIL_CLOSED</strong></li>
+      </ul>
+      <div class="note warn">Fail-closed non è “errore”: è protezione ex-ante.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Privacy-by-design</h2>
+    <div class="card">
+      <p class="muted">
+        Default pubblico: <strong>hash-only</strong>.
+        Identità e documenti non vengono pubblicati. Gli ancoraggi pubblici (se attivati) riportano hash/riferimenti, non dati personali.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Non-goals</h2>
+    <div class="card">
+      <ul>
+        <li>non sostituire identità civili (CIE/passaporto)</li>
+        <li>non “delegare” la decisione all’AI</li>
+        <li>non richiedere fiducia nel sito: la verifica deve essere riproducibile</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>HERMETICUM B.C.E. — Governance · UE-first · fail-closed · responsabilità umana</p>
+</footer>
+</body>
+</html>
