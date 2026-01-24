@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GitJoker-C2 — Services | Hermeticum B.C.E.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="GitJoker-C2 services: fail-closed decision governance, IPR/HRR validation, DGV, certified time and evidence orchestration." />
+  <style>
+    :root{
+      --bg:#0b0c10;
+      --panel:#0f1117;
+      --line:#24262b;
+      --text:#e8e8e8;
+      --muted:#a9adb7;
+      --accent:#9be7ff;
+      --good:#6ee7b7;
+      --warn:#fbbf24;
+      color-scheme: dark;
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    header, main, footer{
+      max-width:980px;
+      margin:0 auto;
+      padding:24px 20px;
+    }
+    header{ border-bottom:1px solid var(--line); }
+    footer{
+      border-top:1px solid var(--line);
+      margin-top:60px;
+      font-size:0.9rem;
+      color:var(--muted);
+    }
+    a{ color:var(--accent); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    h1{ margin:0 0 10px; font-size:1.9rem; }
+    h2{ margin-top:36px; font-size:1.25rem; }
+    h3{ margin:0 0 8px; font-size:1.05rem; }
+    p{ max-width:860px; }
+
+    .nav{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-top:12px;
+      font-size:0.95rem;
+    }
+
+    .card{
+      background:var(--panel);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:18px;
+      margin-top:16px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:14px;
+      margin-top:16px;
+    }
+    .col6{ grid-column:span 12; }
+    .col12{ grid-column:span 12; }
+    @media(min-width:900px){
+      .col6{ grid-column:span 6; }
+    }
+
+    ul{ padding-left:18px; margin:10px 0 0; }
+    li{ margin:6px 0; }
+
+    .mono{
+      font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+      background:#0b0c10;
+      border:1px solid var(--line);
+      border-radius:12px;
+      padding:14px;
+      overflow-x:auto;
+      white-space:nowrap;
+      margin-top:10px;
+    }
+
+    .note{
+      border-left:3px solid var(--accent);
+      padding:10px 12px;
+      background:rgba(155,231,255,0.08);
+      border-radius:10px;
+      margin-top:12px;
+    }
+    .warn{
+      border-left-color:var(--warn);
+      background:rgba(251,191,36,0.10);
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:6px 10px;
+      font-size:12px;
+      color:var(--muted);
+      background:rgba(255,255,255,0.02);
+    }
+    .dot{
+      width:8px;height:8px;border-radius:999px;background:var(--good);
+      box-shadow:0 0 0 3px rgba(110,231,183,0.15);
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <h1>GitJoker-C2 — Services</h1>
+  <p class="muted">
+    Non-offensive C2 services for decision governance in <strong>Hermeticum B.C.E.</strong>
+  </p>
+
+  <nav class="nav">
+    <a href="./index.html">Overview</a>
+    <a href="./services.html"><strong>Services</strong></a>
+    <a href="./README.md">README</a>
+    <a href="https://manuelcoletta1-source.github.io/hermeticum-bce-services/">Hermeticum Services</a>
+    <a href="https://manuelcoletta1-source.github.io/hermeticum-bce-technology/">Technology</a>
+  </nav>
+
+  <div class="badge"><span class="dot"></span> Fail-Closed · UE-first · Audit-by-design</div>
+</header>
+
+<main>
+
+  <section>
+    <h2>Service scope</h2>
+    <p>
+      GitJoker-C2 provides the <strong>operational governance services</strong> that
+      validate, coordinate and authorize digital actions before execution.
+      All services enforce a <strong>fail-closed</strong> policy.
+    </p>
+    <div class="mono">Event → IPR/HRR → DGV → Certified Time → Evidence Bundle</div>
+  </section>
+
+  <section>
+    <h2>Core services</h2>
+
+    <div class="grid">
+
+      <div class="card col6">
+        <h3>IPR/HRR Validation</h3>
+        <p class="muted">
+          Verification of human legitimacy before any action is considered.
+        </p>
+        <ul>
+          <li>unique human root (non-duplicable)</li>
+          <li>status check (active / suspended)</li>
+          <li>scope and role verification</li>
+        </ul>
+        <div class="note warn">
+          <strong>Fail-closed trigger:</strong> invalid or missing IPR/HRR → execution blocked.
+        </div>
+      </div>
+
+      <div class="card col6">
+        <h3>Decision Gate Validation (DGV)</h3>
+        <p class="muted">
+          Mandatory ex-ante decision validation with standardized outcomes.
+        </p>
+        <ul>
+          <li>policy enforcement</li>
+          <li>context consistency checks</li>
+          <li>outcomes: <strong>ALLOW · REVIEW · DENY · FAIL_CLOSED</strong></li>
+        </ul>
+        <div class="note warn">
+          <strong>Fail-closed trigger:</strong> missing or ambiguous policy → execution blocked.
+        </div>
+      </div>
+
+      <div class="card col6">
+        <h3>Certified Time Orchestration</h3>
+        <p class="muted">
+          Trusted temporal reference for all governed actions.
+        </p>
+        <ul>
+          <li>consistent reference time source</li>
+          <li>known error bounds</li>
+          <li>reproducible verification</li>
+        </ul>
+        <div class="note warn">
+          <strong>Fail-closed trigger:</strong> unverifiable time source → execution blocked.
+        </div>
+      </div>
+
+      <div class="card col6">
+        <h3>Evidence Bundle Generation</h3>
+        <p class="muted">
+          Automatic generation of structured evidence for audit and opponibility.
+        </p>
+        <ul>
+          <li>hashes and signatures</li>
+          <li>decision outcome and context</li>
+          <li>temporal linkage</li>
+        </ul>
+        <div class="note warn">
+          <strong>Fail-closed trigger:</strong> incomplete evidence chain → execution blocked.
+        </div>
+      </div>
+
+      <div class="card col12">
+        <h3>Critical Anchors (optional)</h3>
+        <p class="muted">
+          Selective cryptographic anchoring for high-impact decisions.
+        </p>
+        <ul>
+          <li>IPFS / Bitcoin / EVM (policy-driven)</li>
+          <li>activated by risk level</li>
+          <li>used as final proof, not default storage</li>
+        </ul>
+        <div class="note">
+          Anchors are activated only when required by governance or risk profile.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Who uses these services</h2>
+    <div class="grid">
+      <div class="card col6">
+        <h3>Organizations & Enterprises</h3>
+        <ul>
+          <li>controlled execution of critical processes</li>
+          <li>clear separation of decision and execution</li>
+          <li>audit-ready governance</li>
+        </ul>
+      </div>
+      <div class="card col6">
+        <h3>Public Institutions</h3>
+        <ul>
+          <li>verifiable administrative decisions</li>
+          <li>continuity and accountability</li>
+          <li>public trust through verification</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    GitJoker-C2 — Services<br/>
+    Non-offensive governance infrastructure · Hermeticum B.C.E.
+  </p>
+</footer>
+</body>
+</html>
