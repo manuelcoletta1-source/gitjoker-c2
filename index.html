@@ -1,120 +1,165 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
+  <title>GitJoker-C2 — Governance Layer | Hermeticum B.C.E.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GitJoker-C2 (AI JOKER) — Hermeticum B.C.E.</title>
-  <meta name="description" content="GitJoker-C2 (AI JOKER): orchestrazione C2 dello stack Hermeticum B.C.E., coordinamento verificabile di moduli IPR con fail-closed e audit-by-design." />
-  <meta name="author" content="Manuel Coletta" />
-  <meta name="publisher" content="Esoterologia Edizioni" />
+  <meta name="description" content="GitJoker-C2 is the non-offensive C2 governance layer of Hermeticum B.C.E., enforcing fail-closed decision validation and human responsibility." />
   <style>
-    :root { color-scheme: dark; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: #0b0c10;
-      color: #e8e8e8;
+    :root{
+      --bg:#0b0c10;
+      --panel:#0f1117;
+      --line:#24262b;
+      --text:#e8e8e8;
+      --muted:#a9adb7;
+      --accent:#9be7ff;
+      color-scheme: dark;
     }
-    header, main, footer {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 24px;
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
     }
-    .card {
-      background: #0f1117;
-      border: 1px solid #24262b;
-      border-radius: 18px;
-      padding: 22px;
-      box-shadow: 0 12px 30px rgba(0,0,0,.35);
+    header, main, footer{
+      max-width:980px;
+      margin:0 auto;
+      padding:24px 20px;
     }
-    h1 { font-size: 30px; margin: 0 0 10px; }
-    h2 { font-size: 18px; font-weight: 600; opacity: .9; margin: 0 0 18px; }
-    p { line-height: 1.55; opacity: .95; }
-    .btns {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 16px;
+    header{ border-bottom:1px solid var(--line); }
+    footer{
+      border-top:1px solid var(--line);
+      margin-top:60px;
+      font-size:0.9rem;
+      color:var(--muted);
     }
-    .btn {
-      border: 1px solid #2b2f38;
-      border-radius: 12px;
-      padding: 10px 14px;
-      background: #111420;
-      color: #9bdcff;
-      text-decoration: none;
-      font-size: 14px;
+    a{ color:var(--accent); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    h1{ margin:0 0 10px; font-size:1.9rem; }
+    h2{ margin-top:36px; font-size:1.25rem; }
+    p{ max-width:860px; }
+
+    .nav{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-top:12px;
+      font-size:0.95rem;
     }
-    .btn:hover { text-decoration: underline; }
-    .muted { opacity: .75; font-size: 13px; }
-    footer { text-align: center; }
-    .tag {
-      display: inline-block;
-      font-size: 12px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      border: 1px solid #2b2f38;
-      opacity: .85;
-      margin-bottom: 12px;
+
+    .card{
+      background:var(--panel);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:18px;
+      margin-top:16px;
+    }
+
+    .mono{
+      font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+      background:#0b0c10;
+      border:1px solid var(--line);
+      border-radius:12px;
+      padding:14px;
+      overflow-x:auto;
+      white-space:nowrap;
+      margin-top:10px;
+    }
+
+    .note{
+      border-left:3px solid var(--accent);
+      padding:10px 12px;
+      background:rgba(155,231,255,0.08);
+      border-radius:10px;
+      margin-top:12px;
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <div class="card">
-    <div class="tag">Orchestrazione C2</div>
-    <h1>GitJoker-C2 (AI JOKER)</h1>
-    <h2>Hermeticum B.C.E. · Orchestrazione verificabile</h2>
-    <p>
-      GitJoker-C2 è lo strato di **orchestrazione C2 verificabile** dello stack
-      software Hermeticum B.C.E. Coordina moduli IPR sotto enforcement UNEBDO,
-      applica fail-closed e garantisce audit-by-design in ogni workflow.
-    </p>
-    <p class="muted">
-      AI JOKER non sostituisce norme o policy: **le applica e le rende verificabili nel tempo**.
-    </p>
-    <div class="btns">
-      <a class="btn" href="./README.md">README</a>
-      <a class="btn" href="../unebdo/">UNEBDO</a>
-      <a class="btn" href="../opc/">OPC</a>
-      <a class="btn" href="../hermeticum-bce-services/">HUB Services</a>
-    </div>
-  </div>
+  <h1>GitJoker-C2</h1>
+  <p class="muted">
+    Non-offensive Command · Control · Coordination layer<br/>
+    Governance and decision validation for <strong>Hermeticum B.C.E.</strong>
+  </p>
+
+  <nav class="nav">
+    <a href="./index.html"><strong>GitJoker-C2</strong></a>
+    <a href="./README.md">README</a>
+    <a href="https://manuelcoletta1-source.github.io/hermeticum-bce-services/">Hermeticum Services</a>
+    <a href="https://manuelcoletta1-source.github.io/hermeticum-bce-technology/">Technology</a>
+  </nav>
 </header>
 
 <main>
 
-  <section class="card">
-    <h3>Ruolo architetturale</h3>
+  <section>
+    <h2>What GitJoker-C2 is</h2>
     <p>
-      GitJoker-C2 rende l’ecosistema **opera tivo**: applica policy, controlla precondizioni,
-      coordina il flusso tra moduli e produce evidenze opponibili.
-    </p>
-    <p class="muted">
-      Incertezza = **blocco prima dell’esecuzione** (fail-closed).
+      <strong>GitJoker-C2</strong> is the operational governance layer of the
+      <strong>Hermeticum B.C.E.</strong> ecosystem.
+      It sits between human decision and technical execution, enforcing
+      <strong>fail-closed validation</strong>, responsibility attribution and auditability.
     </p>
   </section>
 
   <section class="card">
-    <h3>Moduli coordinati</h3>
-    <p class="muted">GitJoker-C2 interagisce con:</p>
-    <div class="btns">
-      <a class="btn" href="../ipr-core/">IPR-CORE</a>
-      <a class="btn" href="../ipr-gate/">IPR-GATE</a>
-      <a class="btn" href="../ipr-comply./">IPR-COMPLY</a>
-      <a class="btn" href="../ipr-trace/">IPR-TRACE</a>
-      <a class="btn" href="../ipr-exchange./">IPR-EXCHANGE</a>
+    <h2>Operational chain</h2>
+    <p>
+      GitJoker-C2 enforces the minimal decision chain defined by Hermeticum B.C.E.
+    </p>
+    <div class="mono">
+      Event → IPR/HRR → DGV → Certified Time → Evidence Bundle
+    </div>
+    <div class="note">
+      If any required element is missing or unverifiable, execution is blocked.
+    </div>
+  </section>
+
+  <section>
+    <h2>Core principles</h2>
+    <ul>
+      <li><strong>Fail-closed by design</strong>: uncertainty is treated as risk</li>
+      <li><strong>Human responsibility</strong>: every action is tied to a valid IPR/HRR</li>
+      <li><strong>Separation of roles</strong>: AI may assist, humans decide</li>
+      <li><strong>Audit-by-design</strong>: every decision is reconstructible</li>
+      <li><strong>UE-first governance</strong>: aligned with European frameworks</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Git as Governance</h2>
+    <p>
+      GitJoker-C2 applies the Git model to governance:
+      versioned decisions, accountable authorship, controlled merges.
+    </p>
+    <div class="mono">
+      No version → no validation → no execution
+    </div>
+  </section>
+
+  <section>
+    <h2>Relationship with AIJoker</h2>
+    <p>
+      <strong>AIJoker</strong> provides analysis and decision support.<br/>
+      <strong>GitJoker-C2</strong> validates, governs and authorizes execution.
+    </p>
+    <div class="note">
+      AI can suggest. Only humans decide. GitJoker-C2 enforces the decision.
     </div>
   </section>
 
 </main>
 
 <footer>
-  <p class="muted">
-    © Manuel Coletta<br/>
-    <b>Esoterologia Edizioni</b><br/>
-    GitJoker-C2 · Hermeticum B.C.E.
+  <p>
+    GitJoker-C2 — Hermeticum B.C.E.<br/>
+    Non-offensive governance infrastructure · UE-first
   </p>
 </footer>
 
