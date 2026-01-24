@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>HERMETICUM B.C.E. — Use Cases</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Use cases: decisioni critiche con responsabilità umana opponibile, validazione ex-ante e prova digitale verificabile nel tempo." />
+  <style>
+    :root{--bg:#0b0c10;--panel:#0f1117;--line:#24262b;--text:#e8e8e8;--muted:#a9adb7;--accent:#9be7ff;color-scheme:dark;}
+    *{box-sizing:border-box;}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+    header,main,footer{max-width:1080px;margin:0 auto;padding:24px 20px;}
+    header{border-bottom:1px solid var(--line);}
+    footer{border-top:1px solid var(--line);margin-top:60px;font-size:.92rem;color:var(--muted);}
+    a{color:var(--accent);text-decoration:none;}a:hover{text-decoration:underline;}
+    h1{margin:0 0 8px;font-size:1.95rem;}h2{margin-top:34px;font-size:1.25rem;}h3{margin:0 0 8px;font-size:1.05rem;}
+    .nav{display:flex;gap:14px;flex-wrap:wrap;margin-top:12px;font-size:.95rem;}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:16px;}
+    .col6{grid-column:span 12;}@media(min-width:980px){.col6{grid-column:span 6;}}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;margin-top:16px;}
+    .muted{color:var(--muted);}
+    ul{padding-left:18px;margin:10px 0 0;}li{margin:6px 0;}
+  </style>
+</head>
+<body>
+<header>
+  <h1>Use Cases</h1>
+  <p class="muted">Dove serve una catena fail-closed con responsabilità umana opponibile.</p>
+
+  <nav class="nav">
+    <a href="./index.html">Home</a>
+    <a href="./services.html">Servizi</a>
+    <a href="./catalog.html">Catalogo</a>
+    <a href="./create.html">Attivazione</a>
+    <a href="./verify.html">Verifica</a>
+    <a href="./governance.html">Governance</a>
+    <a href="./use-cases.html"><strong>Use Cases</strong></a>
+    <a href="./evidence.html">Evidence</a>
+    <a href="./README.md">README</a>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h2>Esempi</h2>
+    <div class="grid">
+      <div class="card col6">
+        <h3>Processi aziendali critici</h3>
+        <p class="muted">Autorizzazioni, accessi, change management, operazioni ad alto impatto: decisione ex-ante + evidenza.</p>
+        <ul>
+          <li>chi decide è verificabile (IPR/HRR)</li>
+          <li>policy applicata prima dell’esecuzione (DGV)</li>
+          <li>bundle verificabile nel tempo</li>
+        </ul>
+      </div>
+
+      <div class="card col6">
+        <h3>PA / procedimenti sensibili</h3>
+        <p class="muted">Azioni digitali con obbligo di tracciabilità e auditabilità: riduzione contestazioni e incertezza.</p>
+        <ul>
+          <li>attribuzione opponibile</li>
+          <li>verifica riproducibile per terze parti</li>
+          <li>policy fail-closed</li>
+        </ul>
+      </div>
+
+      <div class="card col6">
+        <h3>AI assistiva (non esecutiva)</h3>
+        <p class="muted">L’AI suggerisce, l’umano decide, il sistema valida: separazione funzionale per compliance.</p>
+        <ul>
+          <li>niente “AI decides”</li>
+          <li>decisione umana vincolata a evidenza</li>
+          <li>audit-by-design</li>
+        </ul>
+      </div>
+
+      <div class="card col6">
+        <h3>Contenzioso e contestazioni nel tempo</h3>
+        <p class="muted">Evidenza strutturata e verificabile: riduce il costo della prova e aumenta la robustezza.</p>
+        <ul>
+          <li>hash/firme/tempo/metadati</li>
+          <li>ancoraggi selettivi per criticità</li>
+          <li>verifica offline possibile</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>HERMETICUM B.C.E. — Use Cases · UE-first · fail-closed · evidence-first</p>
+</footer>
+</body>
+</html>
