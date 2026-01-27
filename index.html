@@ -1,277 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <title>HERMETICUM B.C.E. — Services | Sicurezza Digitale UE-first</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="HERMETICUM B.C.E. — Framework UE-first per identità verificabile, responsabilità opponibile e prove digitali resistenti nel tempo. Catena fail-closed per decisioni critiche." />
-  <style>
-    :root{
-      --bg:#0b0c10;
-      --panel:#0f1117;
-      --line:#24262b;
-      --text:#e8e8e8;
-      --muted:#a9adb7;
-      --accent:#9be7ff;
-      --good:#6ee7b7;
-      --warn:#fbbf24;
-      --bad:#fb7185;
-      color-scheme: dark;
-    }
-    *{ box-sizing:border-box; }
-    body{
-      margin:0;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.6;
-    }
-    header, main, footer{
-      max-width:1080px;
-      margin:0 auto;
-      padding:24px 20px;
-    }
-    header{ border-bottom:1px solid var(--line); }
-    footer{
-      border-top:1px solid var(--line);
-      margin-top:60px;
-      font-size:0.92rem;
-      color:var(--muted);
-    }
-    a{ color:var(--accent); text-decoration:none; }
-    a:hover{ text-decoration:underline; }
-
-    h1{ margin:0 0 8px; font-size:1.95rem; }
-    h2{ margin-top:34px; font-size:1.25rem; }
-    h3{ margin:0 0 8px; font-size:1.05rem; }
-    p{ max-width:920px; }
-
-    .brandline{
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-      align-items:baseline;
-      margin-top:6px;
-      color:var(--muted);
-    }
-    .pill{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      border:1px solid var(--line);
-      border-radius:999px;
-      padding:6px 10px;
-      font-size:12px;
-      background:rgba(255,255,255,0.02);
-      color:var(--muted);
-      margin-top:10px;
-    }
-    .dot{
-      width:8px;height:8px;border-radius:999px;background:var(--good);
-      box-shadow:0 0 0 3px rgba(110,231,183,0.15);
-    }
-
-    .nav{
-      display:flex;
-      gap:14px;
-      flex-wrap:wrap;
-      margin-top:12px;
-      font-size:0.95rem;
-    }
-    .nav a{
-      padding:6px 0;
-    }
-
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(12,1fr);
-      gap:14px;
-      margin-top:16px;
-    }
-    .col6{ grid-column:span 12; }
-    .col4{ grid-column:span 12; }
-    .col12{ grid-column:span 12; }
-    @media(min-width:980px){
-      .col6{ grid-column:span 6; }
-      .col4{ grid-column:span 4; }
-    }
-
-    .card{
-      background:var(--panel);
-      border:1px solid var(--line);
-      border-radius:14px;
-      padding:18px;
-      margin-top:16px;
-    }
-    .kicker{
-      letter-spacing:0.08em;
-      text-transform:uppercase;
-      font-size:0.78rem;
-      color:var(--muted);
-      margin-bottom:6px;
-    }
-    .mono{
-      font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-      background:#0b0c10;
-      border:1px solid var(--line);
-      border-radius:12px;
-      padding:14px;
-      overflow-x:auto;
-      white-space:nowrap;
-      margin-top:10px;
-    }
-    .note{
-      border-left:3px solid var(--accent);
-      padding:10px 12px;
-      background:rgba(155,231,255,0.08);
-      border-radius:10px;
-      margin-top:12px;
-    }
-    .warn{
-      border-left-color:var(--warn);
-      background:rgba(251,191,36,0.10);
-    }
-    .bad{
-      border-left-color:var(--bad);
-      background:rgba(251,113,133,0.10);
-    }
-
-    .btnrow{ display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
-    .btn{
-      display:inline-block;
-      padding:9px 12px;
-      border-radius:12px;
-      border:1px solid var(--line);
-      background:#0b0c10;
-      color:var(--text);
-      font-size:0.95rem;
-    }
-    .btn.primary{
-      background:rgba(155,231,255,0.14);
-      border-color:rgba(155,231,255,0.35);
-    }
-    ul{ padding-left:18px; margin:10px 0 0; }
-    li{ margin:6px 0; }
-  </style>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>GITJOKER-C2 — Publishing & Compliance Control</title>
+  <meta name="description" content="GITJOKER-C2 è il layer di controllo per publishing e compliance su GitHub: audit, traceability, fail-closed. UE-first."/>
+  <link rel="stylesheet" href="./assets/ui.css"/>
 </head>
-
 <body>
+
 <header>
-  <h1>HERMETICUM B.C.E. — Services</h1>
-  <div class="brandline">
-    <strong>Blindata · Computabile · Evolutiva</strong>
-    <span>•</span>
-    <span>UE-first · Fail-Closed · Evidence-first</span>
+  <div class="wrap nav">
+    <a class="btn primary" href="./">GITJOKER-C2</a>
+    <a class="btn" href="#scope">Scope</a>
+    <a class="btn" href="#model">Modello</a>
+    <span class="spacer"></span>
+    <a class="btn" href="https://manuelcoletta1-source.github.io/hermeticum-bce-platform/">EU Gateway</a>
+    <a class="btn" href="https://manuelcoletta1-source.github.io/hermeticum-bce-b2b/">B2B</a>
+    <a class="btn" href="https://manuelcoletta1-source.github.io/hermeticum-bce-b2g/">B2G</a>
   </div>
-
-  <nav class="nav">
-    <a href="./index.html"><strong>Home</strong></a>
-    <a href="./services.html">Servizi</a>
-    <a href="./catalog.html">Catalogo</a>
-    <a href="./create.html">Attivazione</a>
-    <a href="./verify.html">Verifica</a>
-    <a href="./governance.html">Governance</a>
-    <a href="./use-cases.html">Use Cases</a>
-    <a href="./evidence.html">Evidence</a>
-    <a href="./README.md">README</a>
-  </nav>
-
-  <div class="pill"><span class="dot"></span> Pilot pubblico — semantica stabile, miglioramenti incrementali</div>
 </header>
 
-<main>
+<div class="wrap">
 
-  <section class="card">
-    <div class="kicker">EU Pilot</div>
-    <h2>BioCyber Identity Card</h2>
-    <p class="muted">
-      HERMETICUM B.C.E. nasce per la sicurezza digitale europea dell’individuo: attribuzione umana verificabile,
-      accountability ex-ante e prova digitale opponibile nel tempo in contesti ad alto rischio.
+  <section class="box">
+    <h1>GITJOKER-C2</h1>
+    <p>
+      Layer di <b>Command & Control</b> orientato a <b>publishing</b> e <b>compliance</b> su GitHub:
+      standardizza input/output, esegue controlli ex-ante, produce eventi auditabili.
     </p>
-    <p class="muted">
-      Non è un documento civile. Non sostituisce CIE o passaporto.
-      È uno strato tecnico che rende la responsabilità umana non opzionale.
+    <p>
+      <span class="tag">UE-first</span>
+      <span class="tag">Audit-first</span>
+      <span class="tag">Fail-closed</span>
+      <span class="tag">Hash-only</span>
     </p>
-
-    <div class="mono">Evento → Identità umana verificabile (IPR/HRR) → Gate (DGV) → Tempo certificato → Evidence Bundle</div>
-
-    <div class="note warn">
-      <strong>Regola fail-closed:</strong> se un elemento essenziale è mancante o non verificabile, l’azione <strong>non</strong> procede.
-    </div>
-
-    <div class="btnrow">
-      <a class="btn primary" href="./create.html">Inizia Attivazione</a>
-      <a class="btn" href="./verify.html">Verifica pubblica</a>
-      <a class="btn" href="./catalog.html">Vedi Catalogo</a>
+    <div class="cta">
+      <a class="btn primary" href="./README.md">README</a>
+      <a class="btn" href="./OPERATING_MODEL.md">Operating Model</a>
     </div>
   </section>
 
-  <section>
-    <h2>Perché esiste</h2>
-    <div class="grid">
-      <div class="card col4">
-        <h3>Responsabilità</h3>
-        <p class="muted">Decisioni digitali critiche senza radice umana opponibile generano scarico di colpa sull’algoritmo.</p>
-      </div>
-      <div class="card col4">
-        <h3>Fail-open</h3>
-        <p class="muted">Automazione che procede in assenza di prove e controlli ex-ante: rischio sistemico.</p>
-      </div>
-      <div class="card col4">
-        <h3>Prova nel tempo</h3>
-        <p class="muted">Evidenze che decadono, cambiano formato o diventano non verificabili: contenzioso certo.</p>
-      </div>
+  <section class="grid2" id="scope">
+    <div class="box">
+      <h2>Cosa fa</h2>
+      <p>
+        • Controllo ex-ante di release e pubblicazioni<br/>
+        • Standardizzazione di evidenze (manifest, receipt, freeze)<br/>
+        • Produzione di audit trail append-only<br/>
+        • Routing verso moduli IPR/UNEBDO/OPC
+      </p>
+    </div>
+    <div class="box">
+      <h2>Cosa non fa</h2>
+      <p>
+        • Non è uno strumento offensivo / operativo “tattico”<br/>
+        • Non automatizza decisioni legali o istituzionali<br/>
+        • Non opera in modalità permissiva<br/>
+        • Non gestisce dati personali (hash-only)
+      </p>
     </div>
   </section>
 
-  <section>
-    <h2>Componenti chiave</h2>
-    <div class="grid">
-      <div class="card col6">
-        <h3>IPR / HRR — Radice Umana</h3>
-        <p class="muted">
-          Collegamento tecnico a una persona reale, verificabile e non duplicabile,
-          intesa come <strong>soggetto tecnico e giuridico responsabile</strong> dell’azione.
-        </p>
-      </div>
-      <div class="card col6">
-        <h3>DGV — Decision Gate Validator</h3>
-        <p class="muted">
-          Validazione ex-ante con esiti standardizzati:
-          <strong>ALLOW · REVIEW · DENY · FAIL_CLOSED</strong>.
-        </p>
-      </div>
-      <div class="card col6">
-        <h3>Tempo certificato</h3>
-        <p class="muted">Riferimento temporale consistente e verificabile: ciò che non è misurabile non è opponibile.</p>
-      </div>
-      <div class="card col6">
-        <h3>Evidence Bundle</h3>
-        <p class="muted">Pacchetto di evidenze strutturate (hash/firme/tempo/metadati) per audit e opponibilità.</p>
-      </div>
-    </div>
-
-    <div class="note">
-      Regola d’oro: la verifica è <strong>“ricalcola e confronta”</strong>, non “fidati del sito”.
-    </div>
+  <section class="box" id="model">
+    <h2>Regola FAIL-CLOSED</h2>
+    <p>
+      Se un controllo fallisce (hash, firma, policy, integrità repo),
+      la pubblicazione è <b>bloccata</b>.
+      Nessun output “parziale” viene considerato valido.
+    </p>
   </section>
 
-  <section class="card">
-    <h2>Collegamenti ufficiali</h2>
-    <ul>
-      <li><strong>Services:</strong> https://manuelcoletta1-source.github.io/hermeticum-bce-services/</li>
-      <li><strong>Technology:</strong> https://manuelcoletta1-source.github.io/hermeticum-bce-technology/</li>
-      <li><strong>Verifica / IPR pubblica:</strong> https://manuelcoletta1-source.github.io/manuhell/</li>
-    </ul>
+  <section class="box">
+    <h2>Collegamenti chiave</h2>
+    <p>
+      • EU Gateway: piattaforma neutra Create/Verify/Evidence<br/>
+      • IPR stack: ipr-core / ipr-gate / ipr-comply / ipr-exchange<br/>
+      • Policy: UNEBDO + OPC
+    </p>
   </section>
 
-</main>
+</div>
 
 <footer>
-  <p>
-    HERMETICUM B.C.E. — Services<br/>
-    UE-first · fail-closed · evidence-first · responsabilità umana opponibile
-  </p>
+  <div class="wrap">
+    <p class="small">
+      HERMETICUM B.C.E. S.r.l. — GITJOKER-C2 · Publishing & Compliance Control · Fail-closed · UE-first
+    </p>
+  </div>
 </footer>
+
 </body>
 </html>
