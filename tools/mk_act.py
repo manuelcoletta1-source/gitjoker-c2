@@ -22,11 +22,6 @@ def read_text(path: str) -> str:
         return f.read()
 
 
-def read_json(path: str):
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
-
-
 def write_json(path: str, obj):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
@@ -171,15 +166,22 @@ def _next_act_id(index_path: str) -> int:
 def _last_entry_from_index(index_path: str) -> str:
     """
     Reads the last entry_sha256 from index.md (append-only).
+    Your index format is:
+      - act_id: N
+        ...
+        entry_sha256: <hex>
+    So we must match 'entry_sha256:' (not '- entry_sha256:').
     If missing, returns GENESIS.
     """
     if not os.path.isfile(index_path):
         return "GENESIS"
+
     txt = read_text(index_path)
     for line in reversed(txt.splitlines()):
-        line = line.strip()
-        if line.startswith("- entry_sha256:"):
-            return line.split(":", 1)[1].strip()
+        s = line.strip()
+        if s.startswith("entry_sha256:"):
+            return s.split(":", 1)[1].strip()
+
     return "GENESIS"
 
 
@@ -220,7 +222,6 @@ def main():
     acts_dir = os.path.join(REPO_ROOT, "registry", "acts")
     index_path = os.path.join(acts_dir, "index.md")
 
-    # ensure base structure exists (fail-closed, deterministic)
     os.makedirs(acts_dir, exist_ok=True)
     if not os.path.isfile(index_path):
         append_text(index_path, "# GitJoker-C2 ACTS (append-only)\n\n")
@@ -252,7 +253,6 @@ def main():
     payload_canon = json.dumps(payload, indent=2, sort_keys=True, ensure_ascii=False) + "\n"
     payload_sha = sha256_hex_utf8(payload_canon)
 
-    # entry hash binds prev + payload_sha
     base = "|".join([prev_entry, payload_sha])
     entry = hashlib.sha256(base.encode("utf-8")).hexdigest()
 
