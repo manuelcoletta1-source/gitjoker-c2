@@ -1,0 +1,8 @@
+{
+  "spec": "HBCE-ED25519-PUB-0001",
+  "key_id": "GITJOKER-C2-ACT-001",
+  "alg": "ED25519",
+  "format": "PEM",
+  "key_sha256_b64": "waSYb3D8XPhCrNjlcxrSSeBOv2gi6sCOJk6jrBghoS4=",
+  "pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEA3N85Z95dzVV9RJnoj+GQm0YwPSDad9avIrwGTqtsipM=\n-----END PUBLIC KEY-----\n"
+}
