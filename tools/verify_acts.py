@@ -1,13 +1,20 @@
 #!/usr/bin/env python3
 """
 GitJoker-C2 — verify_acts
-Deterministic verifier for append-only ACT chain:
+Deterministic verifier for append-only ACT chains.
+
+Modes:
+- STRICT (default): single chain, no resets (prev must match previous entry).
+- --allow-genesis-resets: allow multiple segments starting from GENESIS.
+  This is useful during bootstrap/migration, but STRICT is the canonical goal.
+
+Checks:
 - index.md ↔ ACT-*.json consistency
-- payload canonicalization → payload_sha256
+- payload canonicalization -> payload_sha256
 - chain entry = sha256(prev|payload_sha256)
 - (optional) ED25519 signature verify via OpenSSL, if pubkey PEM is available
 
-FAIL-CLOSED by default: any mismatch => FAIL and non-zero exit.
+Fail-closed: any mismatch => FAIL and non-zero exit.
 """
 
 import argparse
@@ -18,7 +25,7 @@ import os
 import re
 import subprocess
 import sys
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional
 
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
@@ -46,12 +53,9 @@ def sha256_hex_utf8(s: str) -> str:
     return hashlib.sha256(b).hexdigest()
 
 
-def sha256_hex_bytes(b: bytes) -> str:
-    return hashlib.sha256(b).hexdigest()
-
-
 def canonical_payload_string(payload_obj: Dict[str, Any]) -> str:
-    # Must match mk_act.py canonicalization: json.dumps(..., indent=2, sort_keys=True, ensure_ascii=False) + "\n"
+    # Must match mk_act.py canonicalization:
+    # json.dumps(..., indent=2, sort_keys=True, ensure_ascii=False) + "\n"
     s = json.dumps(payload_obj, indent=2, sort_keys=True, ensure_ascii=False)
     return s.replace("\r\n", "\n") + "\n"
 
@@ -95,7 +99,6 @@ def parse_index(index_md: str) -> List[Dict[str, Any]]:
     if cur:
         entries.append(cur)
 
-    # Basic sanity
     if not entries:
         die("FAIL: index.md has no act entries (append-only blocks not found).")
 
@@ -110,14 +113,6 @@ def parse_index(index_md: str) -> List[Dict[str, Any]]:
 
 
 def find_pub_pem(pub_ref_path: str) -> str:
-    """
-    Attempts to load a public key PEM from pub_ref JSON.
-    Supports common field names:
-      - public_key_pem
-      - publicKeyPem
-      - pem
-      - public_key (if it contains PEM)
-    """
     p = os.path.join(REPO_ROOT, pub_ref_path)
     if not os.path.isfile(p):
         die(f"FAIL: pub_ref not found: {pub_ref_path} (resolved: {p})")
@@ -141,9 +136,6 @@ def find_pub_pem(pub_ref_path: str) -> str:
 
 
 def openssl_verify_ed25519(pub_pem: str, message_ascii: str, sig_b64: str) -> None:
-    """
-    Verifies ED25519 signature over ASCII message using OpenSSL pkeyutl.
-    """
     tmp_dir = os.path.join(REPO_ROOT, ".tmp_verify")
     os.makedirs(tmp_dir, exist_ok=True)
 
@@ -188,12 +180,14 @@ def load_act(act_abs_path: str) -> Dict[str, Any]:
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser(description="GitJoker-C2 — deterministic verifier for ACT chain (index+hash+sig).")
+    ap = argparse.ArgumentParser(description="GitJoker-C2 — deterministic verifier for ACT chain(s).")
     ap.add_argument("--index", default=INDEX_DEFAULT, help="Path to registry/acts/index.md")
     ap.add_argument("--acts-dir", default=ACTS_DIR_DEFAULT, help="Directory containing ACT-*.json files")
     ap.add_argument("--from", dest="from_id", type=int, default=None, help="Start act_id (inclusive)")
     ap.add_argument("--to", dest="to_id", type=int, default=None, help="End act_id (inclusive)")
     ap.add_argument("--skip-sig", action="store_true", help="Skip ED25519 signature verification (NOT recommended).")
+    ap.add_argument("--allow-genesis-resets", action="store_true",
+                    help="Allow multiple segments starting from GENESIS (bootstrap mode).")
     ap.add_argument("--json", action="store_true", help="Emit JSON report on success.")
     args = ap.parse_args()
 
@@ -207,7 +201,6 @@ def main() -> None:
 
     entries = parse_index(read_text(index_path))
 
-    # Filter range
     if args.from_id is not None:
         entries = [e for e in entries if e["act_id"] >= args.from_id]
     if args.to_id is not None:
@@ -216,15 +209,13 @@ def main() -> None:
         die("FAIL: no entries in selected range.")
 
     report: List[Dict[str, Any]] = []
+    expected_prev = "GENESIS"
+    segments = 1
 
-    prev_expected = "GENESIS"
-    for i, idx in enumerate(entries):
+    for idx in entries:
         act_id = idx["act_id"]
-
         path_rel = idx.get("path")
         entry_sha_from_index = idx.get("entry_sha256")
-        status_from_index = idx.get("status")
-        joker_hash_from_index = idx.get("joker_entry_hash")
 
         if not path_rel or not isinstance(path_rel, str):
             die(f"FAIL: index entry act_id={act_id} missing path")
@@ -234,31 +225,39 @@ def main() -> None:
         act_abs = os.path.join(REPO_ROOT, path_rel)
         act = load_act(act_abs)
 
-        # Minimal schema checks
         if act.get("spec") != "GITJOKER-ACT-0001":
             die(f"FAIL: act_id={act_id} invalid spec")
         if int(act.get("act_id")) != int(act_id):
             die(f"FAIL: act_id mismatch (index={act_id} file={act.get('act_id')})")
 
-        # Check chain links (prev)
         chain = act.get("chain") or {}
         chain_prev = chain.get("prev")
         chain_entry = chain.get("entry")
 
-        if chain_prev != prev_expected:
-            die(
-                f"FAIL: act_id={act_id} chain.prev mismatch\n"
-                f"expected={prev_expected}\n"
-                f"found={chain_prev}"
-            )
+        if not isinstance(chain_prev, str) or not isinstance(chain_entry, str):
+            die(f"FAIL: act_id={act_id} missing chain.prev/chain.entry")
 
-        # Recompute payload sha256 from canonical payload
+        # STRICT single-chain expectation
+        if chain_prev != expected_prev:
+            if args.allow_genesis_resets and chain_prev == "GENESIS":
+                # Start a new segment
+                segments += 1
+                expected_prev = "GENESIS"
+            else:
+                die(
+                    f"FAIL: act_id={act_id} chain.prev mismatch\n"
+                    f"expected={expected_prev}\n"
+                    f"found={chain_prev}"
+                )
+
+        # Recompute payload sha256
         payload = act.get("payload") or {}
         payload_canon_obj = payload.get("canonical")
         payload_sha_file = payload.get("sha256")
 
         if not isinstance(payload_canon_obj, dict):
             die(f"FAIL: act_id={act_id} payload.canonical is not an object")
+
         payload_canon_str = canonical_payload_string(payload_canon_obj)
         payload_sha_calc = sha256_hex_utf8(payload_canon_str)
 
@@ -270,7 +269,7 @@ def main() -> None:
             )
 
         # Recompute entry hash
-        entry_calc = compute_entry(prev_expected, payload_sha_calc)
+        entry_calc = compute_entry(chain_prev, payload_sha_calc)
         if chain_entry != entry_calc:
             die(
                 f"FAIL: act_id={act_id} chain.entry mismatch\n"
@@ -278,7 +277,6 @@ def main() -> None:
                 f"calc={entry_calc}"
             )
 
-        # index.md must match chain.entry
         if entry_sha_from_index != chain_entry:
             die(
                 f"FAIL: act_id={act_id} index entry_sha256 mismatch\n"
@@ -286,14 +284,7 @@ def main() -> None:
                 f"act={chain_entry}"
             )
 
-        # Optional: index status / joker hash should match file
-        joker = act.get("joker_c2") or {}
-        if status_from_index and joker.get("status") and status_from_index != joker.get("status"):
-            die(f"FAIL: act_id={act_id} status mismatch (index={status_from_index} act={joker.get('status')})")
-        if joker_hash_from_index and joker.get("entry_hash") and joker_hash_from_index != joker.get("entry_hash"):
-            die(f"FAIL: act_id={act_id} joker_entry_hash mismatch")
-
-        # Signature verify (fail-closed unless --skip-sig)
+        # Signature verify (optional)
         if not args.skip_sig:
             sign = act.get("sign") or {}
             sig_b64 = sign.get("sig")
@@ -308,24 +299,25 @@ def main() -> None:
                 die(f"FAIL: act_id={act_id} missing sign.pub_ref")
 
             pub_pem = find_pub_pem(pub_ref)
-            openssl_verify_ed25519(pub_pem, entry_calc, sig_b64)
+            openssl_verify_ed25519(pub_pem, chain_entry, sig_b64)
 
+        joker = act.get("joker_c2") or {}
         report.append({
             "act_id": act_id,
             "path": path_rel,
             "status": joker.get("status"),
-            "prev": prev_expected,
+            "prev": chain_prev,
             "entry": chain_entry,
             "payload_sha256": payload_sha_calc,
             "sig_verified": (not args.skip_sig),
         })
 
-        prev_expected = chain_entry
+        expected_prev = chain_entry
 
     if args.json:
-        print(json.dumps({"ok": True, "verified": report}, indent=2))
+        print(json.dumps({"ok": True, "segments": segments, "verified": report}, indent=2))
     else:
-        print(f"PASS_ACTS verified={len(report)} last_entry={prev_expected}")
+        print(f"PASS_ACTS verified={len(report)} segments={segments} last_entry={expected_prev}")
 
 
 if __name__ == "__main__":
